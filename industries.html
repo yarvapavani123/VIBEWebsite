@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="industries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container1">
+        <h1>INDUSTRIES</h1>
+        <p>We work on cutting-edge technologies to enhance the existence of our customers in the digital world. Having deep knowledge of dominant industries, our expert team of developers, testers, and consultants will suggest the most significant combination of technologies that fit best for your project in terms of cost, time, and quality. At TPS, we work with common software environments, coding languages, or APIs. However, we are open to discussing if your expectations are not included in these.</p>
+        <img src="industries.png">
+        <div class="card">
+            <img src="ecom.png" alt="">
+            
+            <div class="logo">
+                <img src="i1.png" alt="E-Commerce Image" >
+                <h1>E-COMMERCE AND RETAIL DISTRIBUTION</h1>
+                <p>As a leading software solution company, we have always focused on improving productivity and delivering innovative solutions to our customers. At TPS Software, we empower you with end-to-end B2B and B2C software solutions for E-commerce and retail distribution.</p>
+                <button class="btn" onclick="toggleView('demo1')">VIEW MORE</button>
+                <button class="btn" onclick="toggleView('demo1')" style="display: none;" id="viewLessBtn1">VIEW LESS</button>
+                <div id="demo1"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="book.png" alt="">
+            
+            <div class="logo">
+                <img src="2.png" alt="Education Industry Image">
+                <h1>EDUCATION INDUSTRY</h1>
+
+                <p>The education industry is thriving hard to become more productive and advance. At TPS Software, we work in partnership with educators to design and develop software solutions they need to help their students succeed.</p>
+                <button class="btn" onclick="toggleView('demo2')">VIEW MORE</button>
+                <button class="btn" onclick="toggleView('demo2')" style="display: none;" id="viewLessBtn2">VIEW LESS</button>
+                <div id="demo2"></div>
+            </div>
+        </div>
+
+        <div class="card">
+           <img src="soft.png" alt="">
+            <div class="logo">
+                <img src="i3.png" alt="Independent Software Vendor Image" >
+                <h1>INDEPENDENT SOFTWARE VENDOR</h1>
+                <p>Development of truly usable and successful solutions takes more than just technology. It requires an in-depth understanding of the industry, an appreciation of its unique challenges and opportunities, and familiarity with how employees work.</p>
+                <button class="btn" onclick="toggleView('demo3')">VIEW MORE</button>
+                <button class="btn" onclick="toggleView('demo3')" style="display: none;" id="viewLessBtn3">VIEW LESS</button>
+                <div id="demo3"></div>
+            </div>
+        </div>
+
+        <div class="card">
+         <img src="f.png" alt="">
+            <div class="logo">
+                <img src="i4.png" alt="Finance and Insurance Image" >
+                <h1>FINANCE AND INSURANCE</h1>
+                <p>Fintech is a new financial industry that utilizes technology to automate and enhance financial activities. Fintech companies are merging financial and technical expertise to create innovative solutions transforming the world of finance.</p>
+                <button class="btn" onclick="toggleView('demo4')">VIEW MORE</button>
+                <button class="btn" onclick="toggleView('demo4')" style="display: none;" id="viewLessBtn4">VIEW LESS</button>
+                <div id="demo4"></div>
+            </div>
+        </div>
+
+        <div class="card">
+           <img src="health.png" alt="">
+            <div class="logo">
+                <img src="5.png" alt="Healthcare Image" >
+                <h1>HEALTH CARE</h1>
+                <p>Health IT is evolving rapidly, and mobile applications are innovating the industry to deliver high-end business management systems and patient experiences. TPS Software converts your dream into technology to overcome digital challenges.</p>
+                <button class="btn" onclick="toggleView('demo5')">VIEW MORE</button>
+                <button class="btn" onclick="toggleView('demo5')" style="display: none;" id="viewLessBtn5">VIEW LESS</button>
+                <div id="demo5"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleView(demoId) {
+            const demoDiv = document.getElementById(demoId);
+            const viewMoreBtn = demoDiv.previousElementSibling; // the VIEW MORE button
+            const viewLessBtn = demoDiv.previousElementSibling.previousElementSibling; // the VIEW LESS button
+            
+            if (demoDiv.innerHTML === "") {
+                // Show more content
+                let additionalContent;
+                switch (demoId) {
+                    case 'demo1':
+                        additionalContent = `
+                            <p>Your business growth with cutting-edge technology to provide you valuable mobile and web solutions.</p>
+                            <p>The scope of services includes:</p>
+                            <ul>
+                                <li>Ecommerce App Development</li>
+                                <li>Web Application and Portal</li>
+                                <li>B2B E-Commerce Solutions</li>
+                                <li>B2C E-Commerce Solutions</li>
+                                <li>POS Systems Integration</li>
+                            </ul>
+                        `;
+                        break;
+                    case 'demo2':
+                        additionalContent = `
+                            <p>We have talented developers and designers with great experience in developing endless E-learning and management software solutions.</p>
+                            <p>The scope of services includes:</p>
+                            <ul>
+                                <li>Online E-Learning Solutions</li>
+                                <li>Remote Learning Websites</li>
+                                <li>Institute Management Software</li>
+                                <li>Mobile Learning Applications</li>
+                                <li>Application Development and Maintenance</li>
+                            </ul>
+                        `;
+                        break;
+                    case 'demo3':
+                        additionalContent = `
+                            <p>With a strong focus on dominant industries and quick adoption of cutting-edge technologies, we deliver value in a faster and more cost-efficient manner.</p>
+                            <p>The scope of services includes:</p>
+                            <ul>
+                                <li>Product engineering services</li>
+                                <li>Fast go-to-market development</li>
+                                <li>Independent test center</li>
+                                <li>Porting & migration</li>
+                            </ul>
+                        `;
+                        break;
+                    case 'demo4':
+                        additionalContent = `
+                            <p>As a leading software development firm, we provide industry-leading software engineering services and solutions tailored to your needs.</p>
+                            <p>The scope of services includes:</p>
+                            <ul>
+                                <li>Smart Contract Development</li>
+                                <li>Decentralized App Development</li>
+                                <li>Private Blockchain Development</li>
+                                <li>Crypto Wallet Development</li>
+                                <li>Exchange Platforms</li>
+                                <li>Insurance Management</li>
+                                <li>Custom Blockchain Solutions</li>
+                                <li>Enterprise Application Integration (EAI)</li>
+                            </ul>
+                        `;
+                        break;
+                    case 'demo5':
+                        additionalContent = `
+                            <p>Our expert team collaborates with healthcare companies to design and develop software solutions that enhance patient care.</p>
+                            <p>The scope of services includes:</p>
+                            <ul>
+                                <li>Health Management Information Systems (HMIS)</li>
+                                <li>Web Applications and Portals</li>
+                                <li>Electronic Medical Records (EMR)</li>
+                                <li>Hospital Management Software</li>
+                                <li>Enterprise Content Management</li>
+                            </ul>
+                        `;
+                        break;
+                }
+                demoDiv.innerHTML = additionalContent;
+                viewMoreBtn.style.display = "none";
+                viewLessBtn.style.display = "inline-block";
+            } else {
+                // Hide content
+                demoDiv.innerHTML = "";
+                viewMoreBtn.style.display = "inline-block";
+                viewLessBtn.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

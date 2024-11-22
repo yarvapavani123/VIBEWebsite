@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistics Software Development Services</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.8;
+            color: #2a2a2a;
+            background-color: #f5f8fb;
+            padding: 40px;
+            margin: 0;
+        }
+
+        /* Container styling */
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 35px;
+            background-color: #ffffff;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 18px 36px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Typography */
+        h1 {
+            color: #0078d4;
+            font-size: 2.4em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #0056a1;
+            font-size: 1.8em;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        h3 {
+            color: #003b73;
+            font-size: 1.5em;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: #555555;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: #555555;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        /* Scroll animations */
+        h1, h2, h3, p, li {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Special hover effects for headings */
+        h1:hover, h2:hover, h3:hover {
+            color: #0056a1;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Logistics Software Development Services</h1>
+
+        <h2>IT Services We Offer</h2>
+        <ul>
+            <li>
+                <strong>Custom Logistics Software Development:</strong> We build custom websites and mobile applications that help manage freight and shipping costs, meet service agreements, automate job scheduling, and track and optimize transit time and routes. Frontend & Backend Development.
+            </li>
+            <li>
+                <strong>Software Reengineering:</strong> We analyze the website and app quality, fix bugs, do code refactoring, and change the process flow for existing logistics solutions.
+            </li>
+            <li>
+                <strong>Integration with Third-Party Software:</strong> We create effective ecosystems for the supply chain. We build integration of logistics management systems with 3PL companies and existing logistics solutions on the market.
+            </li>
+            <li>
+                <strong>Automation and Optimization:</strong> We help digitalize logistics businesses by implementing technologies. Our senior-level business analysts help automate and optimize processes to increase the efficiency and effectiveness of the logistics business.
+            </li>
+        </ul>
+
+        <h2>Advance Your Logistics Software</h2>
+
+        <h3>Internet of Things</h3>
+        <p>In the US, the use of IoT technology is revolutionizing transportation and logistics software. IoT applications are especially beneficial for American logistics businesses in fleet management, vehicle tracking, route optimization, inventory management, and strategic planning.</p>
+
+        <h3>Artificial Intelligence</h3>
+        <p>Use the power of artificial intelligence to create applications that predict demand, modify orders, and re-route in-transit goods to warehouses where needed. With AI-powered applications, warehousing, predictive analytics, smart reporting, and intelligent forecasting will evolve to the next level.</p>
+
+        <h3>Big Data & Machine Learning</h3>
+        <p>Machine learning technologies are becoming an integral part of logistics software development services. They provide a comprehensive overview of the supply chain and impact processes such as purchasing, delivery, inventory management, maintenance, scheduling optimization, and accident prediction.</p>
+    </div>
+
+    <script>
+        // JavaScript to handle fade-in animation on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('h1, h2, h3, p, li');
+
+            function fadeInOnScroll() {
+                elements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight - 100) {
+                        element.classList.add('fade-in');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', fadeInOnScroll);
+            fadeInOnScroll(); // Run on page load
+        });
+    </script>
+</body>
+</html>

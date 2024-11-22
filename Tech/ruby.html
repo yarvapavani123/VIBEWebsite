@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruby on Rails Development Services</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.8;
+            color: #2a2a2a;
+            background-color: #f5f8fb;
+            padding: 40px;
+            margin: 0;
+        }
+
+        /* Container styling */
+        .context {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 35px;
+            background-color: #ffffff;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .context:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 18px 36px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Typography */
+        h1 {
+            color: #0078d4;
+            font-size: 2.4em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #0056a1;
+            font-size: 1.8em;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        h3 {
+            color: #003b73;
+            font-size: 1.5em;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: #555555;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            color: #555555;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Image styling */
+        .feature-image {
+            width: 150%;
+            max-width: 900px;
+            display: block;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* Scroll animations */
+        h1, h2, h3, p, ul, li {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Special hover effects for headings */
+        h1:hover, h2:hover, h3:hover {
+            color: #0056a1;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="context">
+        <h1>Ruby on Rails Introduction</h1>
+        <p>
+            Ruby on Rails, also known as Rails, is a server-side web application framework written in the Ruby programming language, developed by David Heinemeier Hansson under the MIT License. It supports the MVC (Model-View-Controller) architecture, providing a default structure for databases, web pages, and web services. It also uses web standards like JSON or XML for data transfer and HTML, CSS, and JavaScript for the user interface. Ruby on Rails emphasizes popular software engineering patterns and principles, such as:
+        </p>
+        <ul>
+            <li><strong>Don't Repeat Yourself (DRY):</strong> Reduces repetition of code or information in software development.</li>
+            <li><strong>Convention Over Configuration (CoC):</strong> Encourages best practices in web application development by providing conventions.</li>
+        </ul>
+
+        <h2>Features of Ruby on Rails</h2>
+        <p>Ruby on Rails is a full-stack framework, handling both front-end and back-end development. Some notable features include:</p>
+        <ul>
+            <li><strong>Model-View-Controller Architecture:</strong> Rails uses MVC, consisting of models, views, and controllers to separate logic and UI.</li>
+            <li><strong>Active Record:</strong> A powerful library in Rails that simplifies database interactions through object-relational mapping (ORM).</li>
+            <li><strong>Built-in Testing:</strong> Rails includes testing tools, saving time and effort in code quality assurance.</li>
+            <li><strong>Simple Syntax:</strong> The Ruby syntax is close to English, making code easier to write and understand.</li>
+            <li><strong>MetaProgramming:</strong> Rails uses metaprogramming techniques to enhance productivity and flexibility.</li>
+        </ul>
+        <img src="rail.jpeg" alt="Ruby on Rails Development" class="feature-image">
+
+        <h2>Collaboration with iOS, Android, and JavaScript Libraries</h2>
+        <p>With Ruby on Rails, you can create multiplatform applications for iOS, Android, and the web, all sharing a single backend managed by Rails. Here are some examples:</p>
+
+        <h3>Example 1: Ruby on Rails with iOS</h3>
+        <p>Ruby on Rails can be used as a backend for iOS applications, handling tasks like user authentication, data storage, and business logic via APIs.</p>
+
+        <h3>Example 2: Ruby on Rails with Android</h3>
+        <p>Similarly, Android apps can use Rails as a backend for server-side functionality, managing database interactions and user sessions through APIs.</p>
+
+        <h3>Example 3: Ruby on Rails with React</h3>
+        <p>React, a popular JavaScript library, often pairs with Rails for dynamic front-end applications. Rails manages data and logic, while React creates interactive user experiences, ideal for single-page applications.</p>
+
+        <h3>Example 4: Ruby on Rails with Flutter</h3>
+        <p>Flutter, an open-source UI toolkit by Google, can work with Rails for front-end and back-end integrations, allowing iOS and Android apps to share a single backend in Rails.</p>
+    </div>
+
+    <script>
+        // JavaScript to handle fade-in animation on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('h1, h2, h3, p, ul, li, .feature-image');
+
+            function fadeInOnScroll() {
+                elements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight - 100) {
+                        element.classList.add('fade-in');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', fadeInOnScroll);
+            fadeInOnScroll(); // Run on page load
+        });
+    </script>
+
+</body>
+</html>

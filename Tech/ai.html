@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Development Services</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.8;
+            color: #333333;
+            background-color: #f0f4f8;
+            padding: 40px;
+            margin: 0;
+        }
+
+        /* Container styling */
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 40px;
+            background-color: #ffffff;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Typography */
+        h1 {
+            color: #0078d4;
+            font-size: 2.4em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #0056a1;
+            font-size: 1.8em;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        h3 {
+            color: #003b73;
+            font-size: 1.5em;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: #555555;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            color: #555555;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Scroll animations */
+        h1, h2, h3, p, ul, li {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Special hover effects for headings */
+        h1:hover, h2:hover, h3:hover {
+            color: #0056a1;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Artificial Intelligence (AI) Development Services</h1>
+        <h3>AI-Based Solutions We Create</h3>
+        <p>With strong expertise in multiple business domains, we strive to provide our clients with top-tier AI solutions tailored to their specific business needs.</p>
+        
+        <h2>Conversational Tools</h2>
+        <p>Using AI, Machine Learning, and NLP, we create chatbots and other systems that provide human-independent, contextually aware services.</p>
+
+        <h2>Recommendation Engines</h2>
+        <p>We build engines for personalized offers based on client behavior. These systems are essential in sectors from media to healthcare.</p>
+
+        <h2>Expert & Classification Systems</h2>
+        <p>Our custom solutions solve industry-specific challenges, using AI to predict outcomes and make data-driven recommendations.</p>
+
+        <h2>Video, Image & Text Analytics</h2>
+        <p>We leverage AI to develop business-specific analytics apps that save time and boost efficiency.</p>
+
+        <h1>Our AI Development Services</h1>
+        <h2>AI Architecture Design</h2>
+        <p>We design blueprints for AI systems, detailing components, functionality, and performance requirements.</p>
+
+        <h2>Machine Learning Model Engineering</h2>
+        <p>Our service includes model design, data preparation, and algorithm selection for predictive or NLP applications.</p>
+
+        <h2>Process Automation with AI</h2>
+        <p>We automate tasks using AI, minimizing manual effort and enhancing workflow efficiency with tools like RPA and chatbots.</p>
+
+        <h2>Generative AI Development</h2>
+        <p>We build AI solutions for generating text, images, and videos, automating content creation and personalization.</p>
+
+        <h1>Industry-Focused AI Solutions</h1>
+        <p>With a proven track record in 11 industries, we deliver custom AI software that drives value for over 250 global companies.</p>
+
+        <h2>Ecommerce</h2>
+        <ul>
+            <li>AI-assisted search</li>
+            <li>Speech recognition</li>
+            <li>Personalized recommendations</li>
+        </ul>
+
+        <h2>Banking and Finance</h2>
+        <ul>
+            <li>Trading solutions</li>
+            <li>Advisory services</li>
+        </ul>
+
+        <h2>Sales & Marketing</h2>
+        <ul>
+            <li>Predictive analytics</li>
+            <li>Content curation</li>
+            <li>AI-powered attribution</li>
+        </ul>
+    </div>
+
+    <script>
+        // Scroll animation logic
+        document.addEventListener("DOMContentLoaded", () => {
+            const elements = document.querySelectorAll("h1, h2, h3, p, ul, li");
+
+            const handleScroll = () => {
+                elements.forEach(element => {
+                    const position = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    if (position < windowHeight - 50) {
+                        element.classList.add("fade-in");
+                    }
+                });
+            };
+
+            window.addEventListener("scroll", handleScroll);
+            handleScroll(); // Initial check
+        });
+    </script>
+
+</body>
+</html>

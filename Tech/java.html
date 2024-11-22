@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js Development Services</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.8;
+            color: #2a2a2a;
+            background-color: #f5f8fb;
+            padding: 40px;
+            margin: 0;
+        }
+
+        /* Container styling */
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 35px;
+            background-color: #ffffff;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 18px 36px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Typography */
+        h1 {
+            color: #0078d4;
+            font-size: 2.4em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #0056a1;
+            font-size: 1.8em;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        h3 {
+            color: #003b73;
+            font-size: 1.5em;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: #555555;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        /* Scroll animations */
+        h1, h2, h3, p {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Special hover effects for headings */
+        h1:hover, h2:hover, h3:hover {
+            color: #0056a1;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Java Development</h1>
+
+        <h2>Features and Benefits of Java Development</h2>
+
+        <h3>Platform Independence</h3>
+        <p>Java is a platform-independent language, meaning it can run on any operating system, making it highly versatile.</p>
+
+        <h3>On-Demand Scaling</h3>
+        <p>Our IT staff augmentation services scale up and down the number of developers during the cooperation on your demand.</p>
+
+        <h3>Object-Oriented Programming</h3>
+        <p>Java follows the object-oriented programming (OOP) paradigm, allowing developers to write modular, reusable, and scalable code.</p>
+
+        <h3>Extensive Libraries</h3>
+        <p>Java has a vast collection of libraries and frameworks, enabling developers to build applications quickly and efficiently.</p>
+
+        <h2>Custom Java Development Services <span style="font-weight: bold;">We Abb With Gear Icon</span></h2>
+
+        <h3>Custom Java Development:</h3>
+        <p>Our team of experienced Java developers specializes in building custom applications tailored for the US market, meeting the unique needs and regulatory requirements of American businesses.</p>
+
+        <h3>Application Maintenance and Support</h3>
+        <p>Our maintenance and support services for Java applications are particularly focused on the US market, ensuring optimal functionality with North American business standards over time.</p>
+
+        <h3>Software Testing</h3>
+        <p>Our comprehensive testing services ensure that Java applications are thoroughly tested for functionality, performance, and security before they are deployed.</p>
+
+        <h3>Migration and Modernization</h3>
+        <p>We can help businesses migrate their existing applications to Java or modernize their legacy systems to take advantage of the latest Java technologies.</p>
+    </div>
+
+    <script>
+        // JavaScript to handle fade-in animation on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('h1, h2, h3, p');
+
+            function fadeInOnScroll() {
+                elements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight - 100) {
+                        element.classList.add('fade-in');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', fadeInOnScroll);
+            fadeInOnScroll(); // Run on page load
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Software Development Services</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.8;
+            color: #2a2a2a;
+            background-color: #f5f8fb;
+            padding: 40px;
+            margin: 0;
+        }
+
+        /* Container styling */
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 35px;
+            background-color: #ffffff;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 18px 36px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Typography */
+        h1 {
+            color: #0078d4;
+            font-size: 2.4em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #0056a1;
+            font-size: 1.8em;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            color: #555555;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        /* Scroll animations */
+        h1, h2, p {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Special hover effects for headings */
+        h1:hover, h2:hover {
+            color: #0056a1;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Healthcare Software Development Services</h1>
+
+        <h2>Full-Cycle Project Development</h2>
+        <p>We provide end-to-end medical software development services from a Discovery phase to maintenance and support, adhering to healthcare standards and regulations in the U.S.</p>
+
+        <h2>Third-Party Software Integration</h2>
+        <p>We can easily integrate the software with any third-party solution, be it electronic health record systems, patient management software, billing modules, telemedicine, etc.</p>
+
+        <h2>Consulting & RnD</h2>
+        <p>Get expert guidance regarding various aspects of healthcare software development and implementations. We help to analyze needs, develop strategy and system architecture, and advise on regulatory requirements like HIPAA, FDA, GDPR.</p>
+
+        <h2>Custom Healthcare Software Development for Business</h2>
+        <p>As a custom healthcare software development firm, we at SumatoSoft deliver comprehensive solutions to healthcare providers, digital health startups, and medical device manufacturers. We prioritize data security and adhere to UI/UX design best practices and regulatory compliance and standards like HIPAA, GDPR, FDA, HITECH, SSAE, FHIR.</p>
+
+        <h2>Healthcare Providers</h2>
+        <p>We develop and implement EMR/EHR, practice management, lab management, asset tracking, remote patient monitoring, and population health management solutions.</p>
+
+        <h2>Digital Health Startups</h2>
+        <p>We provide comprehensive support and expertise to develop innovative software like telehealth systems, wellness tech solutions, and software for diagnostic and monitoring devices.</p>
+
+        <h2>Medical Device Manufacturers</h2>
+        <p>We empower hospital-grade and consumer devices with robust device management solutions across web and mobile platforms and AI-powered analytics tools.</p>
+    </div>
+
+    <script>
+        // JavaScript to handle fade-in animation on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('h1, h2, p');
+
+            function fadeInOnScroll() {
+                elements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight - 100) {
+                        element.classList.add('fade-in');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', fadeInOnScroll);
+            fadeInOnScroll(); // Run on page load
+        });
+    </script>
+</body>
+</html>

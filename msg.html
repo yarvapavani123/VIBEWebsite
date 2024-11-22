@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Symbol Image Style</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Existing h3 styling */
+        h3 {
+            padding-left: 20px;
+            color: rgb(247, 37, 247);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            font-style: italic;
+            animation: fadeInSlide 1.5s ease-out, colorPulse 3s infinite alternate ease-in-out;
+        }
+        
+        /* Keyframe animations for h3 */
+        @keyframes fadeInSlide {
+            0% { opacity: 0; transform: translateX(-20px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes colorPulse {
+            0% { color: rgb(247, 37, 247); }
+            50% { color: rgb(247, 86, 37); }
+            100% { color: rgb(64, 219, 17); }
+        }
+
+        /* Message symbol image styling */
+        .message-image {
+            width: 40px;
+            height: 40px;
+            padding: 10px;
+            border-radius: 50%;
+            background-color: rgb(245, 245, 245);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            animation: fadeInImage 1.5s ease-out forwards;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .message-image:hover {
+            transform: scale(1.1);
+            background-color: rgb(247, 86, 37);
+        }
+
+        /* Fade-in animation for images */
+        @keyframes fadeInImage {
+            0% { opacity: 0; transform: scale(0.8); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Message Icons</h3>
+    
+    <!-- Message symbol images -->
+    <div>
+        <img src="path/to/image1.jpg" alt="Message 1" class="message-image">
+        <img src="path/to/image2.jpg" alt="Message 2" class="message-image">
+        <img src="path/to/image3.jpg" alt="Message 3" class="message-image">
+    </div>
+
+</body>
+</html>

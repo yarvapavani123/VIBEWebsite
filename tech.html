@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe - Home</title>
+    <link rel="stylesheet" href="tech.css"> <!-- Link to CSS file -->
+    <style>
+     
+
+    </style>
+</head>
+<body>
+
+    <div class="banner">
+        <header>
+            <div class="navbar">
+    
+                <div class="logo">
+                    <img src="Nlogo.png">
+                </div>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                        <li><a href="careers.html">CAREERS</a></li>
+                        <li><a href="#">PRODUCT_UNIVERSE</a></li>
+                        <li><a href="contact.html"><button class="btn1">CONTACT US</button></a></li>
+                    
+                    
+                </ul>
+            </div>
+        </header>
+        <div class="slider">
+            <div class="arrow left" onclick="prevSlide()">&#10094;</div>
+            <div class="slider-container">
+                <!-- Add your images with text on top here -->
+                <div class="image-slide">
+                    <img src="te/tech.jpeg" alt="Motivation 1">
+                    
+                </div>
+                <div class="image-slide">
+                    <img src="te/tech1.jpeg" alt="Motivation 2">
+                    
+                </div>
+                <div class="image-slide">
+                    <img src="te/tech2.jpeg" alt="Motivation 3">
+                   
+                </div>
+                <div class="image-slide">
+                    <img src="te/tech3.jpeg" alt="Motivation 4">
+                    
+                </div>
+                <!-- Add more images as needed... -->
+            </div>
+            <div class="arrow right" onclick="nextSlide()">&#10095;</div>
+        
+            <!-- Dots at the bottom -->
+            <div class="dots">
+                <span class="dot small-dot"></span>
+                <span class="dot medium-dot"></span>
+                <span class="dot large-dot"></span>
+                <span class="dot medium-dot"></span>
+                <span class="dot small-dot"></span>
+            </div>
+        </div>
+        
+        <script>
+            let currentIndex = 0;
+            const slides = document.querySelectorAll('.image-slide');
+            const dots = document.querySelectorAll('.dot');
+        
+            // Function to go to the previous slide
+            function prevSlide() {
+                currentIndex = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
+                updateSlider();
+            }
+        
+            // Function to go to the next slide
+            function nextSlide() {
+                currentIndex = (currentIndex === slides.length - 1) ? 0 : currentIndex + 1;
+                updateSlider();
+            }
+        
+            // Update slider position and active dot
+            function updateSlider() {
+                const offset = -currentIndex * 100; // 100% of the width for each image (one image at a time)
+                document.querySelector('.slider-container').style.transform = `translateX(${offset}%)`;
+        
+                // Update dots
+                dots.forEach((dot, index) => {
+                    dot.classList.remove('active');
+                    if (index === currentIndex) {
+                        dot.classList.add('active');
+                    }
+                });
+            }
+        
+            // Initialize the slider
+            updateSlider();
+        
+            // Optional: Automatic slide every 5 seconds
+            setInterval(nextSlide, 2000);
+        </script>
+       </div>
+       <h1>TECHNOLOGIES</h1>
+   <div class="technologies-container">
+    <!-- First Set of Technologies -->
+    <div class="technology" onclick="navigateTo('Tech/nodejs.html')">
+        <div class="image" style="background-image: url('./Tech/img1.png');">
+            <div class="text-overlay">Node.js Development</div>
+        </div>
+    </div>
+    <div class="technology" onclick="navigateTo('Tech/java.html')">
+        <div class="image" style="background-image: url('./Tech/j1.png');">
+            <div class="text-overlay">Java Development</div>
+        </div>
+    </div>
+    <div class="technology" onclick="navigateTo('Tech/ruby.html')">
+        <div class="image" style="background-image: url('./Tech/ruby.jpg');">
+            <div class="text-overlay">Ruby Development</div>
+        </div>
+    </div>
+
+    <!-- Hidden Technologies (Initially hidden) -->
+    <div class="hidden-technologies" id="hidden-technologies" style="display: none;">
+        <div class="technology" onclick="navigateTo('Tech/ml.html')">
+            <div class="image" style="background-image: url('./Tech/Ml1.png');">
+                <div class="text-overlay">Machine Learning</div>
+            </div>
+        </div>
+        <div class="technology" onclick="navigateTo('Tech/blockchain.html')">
+            <div class="image" style="background-image: url('./Tech/blockchain.webp');">
+                <div class="text-overlay">Blockchain</div>
+            </div>
+        </div>
+        <div class="technology" onclick="navigateTo('Tech/ai.html')">
+            <div class="image" style="background-image: url('./Tech/ai.jpg');">
+                <div class="text-overlay">AI Development</div>
+            </div>
+        </div>
+        <!-- Newly Added Technologies -->
+        <div class="technology" onclick="navigateTo('Tech/healthcare.html')">
+            <div class="image" style="background-image: url('./Tech/healthcare.png');">
+                <div class="text-overlay">Health Software</div>
+            </div>
+        </div>
+        <div class="technology" onclick="navigateTo('Tech/logistics.html')">
+            <div class="image" style="background-image: url('./Tech/logistics.png');">
+                <div class="text-overlay">Logistics Technology</div>
+            </div>
+        </div>
+        <div class="technology" onclick="navigateTo('Tech/fintech.html')">
+            <div class="image" style="background-image: url('./Tech/finance.jpg');">
+                <div class="text-overlay">Finance Technology</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- View More Button -->
+    
+</div>
+<button id="view-more-button" onclick="toggleView()">View More</button>
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky",window.scrollY > 0);
+        });
+        </script>
+        <script>
+            function navigate() {
+              // Get the selected value from the dropdown
+              const dropdown = document.getElementById("dropdown");
+              const selectedValue = dropdown.value;
+          
+              // If a valid value is selected, navigate to the URL
+              if (selectedValue) {
+                window.location.href = selectedValue;
+                
+                // Reset the dropdown to "About Us" after redirection
+                dropdown.value = "";
+              }
+            }
+          </script>
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+    const hiddenTechnologies = document.getElementById('hidden-technologies');
+    const viewMoreButton = document.getElementById('view-more-button');
+
+    // Check if elements exist before interacting with them
+    if (!hiddenTechnologies || !viewMoreButton) {
+        console.error("Error: Hidden technologies or view more button not found");
+        return;
+    }
+
+    // Retrieve state from localStorage (default to false)
+    const isViewMoreVisible = localStorage.getItem('viewMoreState') === 'true';
+
+    // Initialize button state
+    if (isViewMoreVisible) {
+        hiddenTechnologies.style.display = 'flex'; // Show hidden technologies
+        viewMoreButton.textContent = 'View Less';
+    } else {
+        hiddenTechnologies.style.display = 'none'; // Hide hidden technologies
+        viewMoreButton.textContent = 'View More';
+    }
+});
+
+// Toggle the visibility of the hidden technologies
+function toggleView() {
+    const hiddenTechnologies = document.getElementById('hidden-technologies');
+    const viewMoreButton = document.getElementById('view-more-button');
+
+    if (!hiddenTechnologies || !viewMoreButton) {
+        console.error("Error: Hidden technologies or view more button not found");
+        return;
+    }
+
+    if (hiddenTechnologies.style.display === 'none') {
+        hiddenTechnologies.style.display = 'flex';
+        viewMoreButton.textContent = 'View Less';
+        localStorage.setItem('viewMoreState', 'true');
+    } else {
+        hiddenTechnologies.style.display = 'none';
+        viewMoreButton.textContent = 'View More';
+        localStorage.setItem('viewMoreState', 'false');
+    }
+}
+
+// Function to handle page navigation (simulate navigation for now)
+function navigateTo(page) {
+    // Save state to localStorage before navigating (in case the user clicks "Back")
+    localStorage.setItem('viewMoreState', document.getElementById('hidden-technologies').style.display === 'flex' ? 'true' : 'false');
+    window.location.href = page; // Simulate page navigation
+}
+
+          </script>
+</body>
+</html>

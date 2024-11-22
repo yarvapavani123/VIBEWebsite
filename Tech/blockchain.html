@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Development Services</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.8;
+            color: #2a2a2a;
+            background-color: #f5f8fb;
+            padding: 40px;
+            margin: 0;
+        }
+
+        /* Container styling */
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 35px;
+            background-color: #ffffff;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 18px 36px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Typography */
+        h1 {
+            color: #0078d4;
+            font-size: 2.4em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #0056a1;
+            font-size: 1.8em;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        h3 {
+            color: #003b73;
+            font-size: 1.5em;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: #555555;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            color: #555555;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Scroll animations */
+        h1, h2, h3, p, ul, li {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Special hover effects for headings */
+        h1:hover, h2:hover, h3:hover {
+            color: #0056a1;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Blockchain Development Services</h1>
+        <p>Our blockchain development services Smart contracts icon</p>
+
+        <h2>Smart Contracts</h2>
+        <p>We develop, test, and deploy tailor-made smart contracts with unique business logic. Crafting state-of-the-art smart contracts to empower your business with transparent and secure transactions.</p>
+
+        <h2>Decentralized App Development</h2>
+        <p>We build high-end DApps that combine several interrelated smart contracts that share common logic and front end.</p>
+
+        <h2>ICO Solutions</h2>
+        <p>We provide you with our professional expertise, thus enabling you to launch a successful crowdfunding campaign.</p>
+
+        <h2>Custom Blockchain Networks</h2>
+        <p>With our solid background and expertise in blockchain development, we deliver customized solutions that will refuel your business.</p>
+
+        <h2>Crypto Wallet Development</h2>
+        <p>We create crypto wallet DApps that support multiple cryptocurrencies and contain information about your wallet balance.</p>
+
+        <h2>Security Boost</h2>
+        <p>We develop decentralized data storages to boost security, integrate data, ensure better access control, and reduce risks.</p>
+
+        <h2>Our Blockchain Development Process</h2>
+        <ul>
+            <li>Blockchain Ideation</li>
+            <li>Technology Selection</li>
+            <li>Design</li>
+            <li>Development</li>
+            <li>QA & Testing</li>
+            <li>Deployment</li>
+            <li>Support & Maintenance</li>
+        </ul>
+
+        <h2>What Makes Us Different</h2>
+
+        <h3>Technology Expertise</h3>
+        <p>Decade-long trailblazers in blockchain innovation, we’re committed to elevating your business with robust, bespoke blockchain solutions.</p>
+
+        <h3>Quality Control</h3>  
+        <p>Our Senior Developers and CTO always participate in the code review process regardless of the project size to ensure code quality.</p>
+
+        <h3>Full Transparency</h3>
+        <p>We communicate weekly, provide several contact points, send timesheet reports monthly even if you don’t request them, explain potential risks and help to handle them, and help to avoid unnecessary costs.</p>
+    </div>
+
+    <script>
+        // JavaScript to handle fade-in animation on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('h1, h2, h3, p, ul, li');
+
+            function fadeInOnScroll() {
+                elements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight - 100) {
+                        element.classList.add('fade-in');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', fadeInOnScroll);
+            fadeInOnScroll(); // Run on page load
+        });
+    </script>
+</body>
+</html>

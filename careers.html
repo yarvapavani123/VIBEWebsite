@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="careers.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="banner">
+    <header>
+        <div class="navbar">
+
+            <div class="logo">
+                <img src="Nlogo.png">
+            </div>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                    <li><a href="tech.html">TECHNOLOGIES</a></li>
+                    <li><a href="#">PRODUCT_UNIVERSE</a></li>
+                    <li><a href="contact.html"><button class="btn1">CONTACT US</button></a></li>
+                
+                
+            </ul>
+        </div>
+    </header>
+    <div class="slider">
+      <div class="arrow left" onclick="prevSlide()">&#10094;</div>
+      <div class="slider-container">
+          <!-- Add your images with text on top here -->
+          <div class="image-slide">
+              <img src="carres1/car.jpeg" alt="Motivation 1">
+              <div class="text-overlay1">"Work hard in silence, let your success be your noise."</div>
+          </div>
+          <div class="image-slide">
+              <img src="carres1/car1.jpeg" alt="Motivation 2">
+              <div class="text-overlay2">"The only way to do great work is to love what you do."</div>
+          </div>
+          <div class="image-slide">
+              <img src="carres1/car2.jpeg" alt="Motivation 3">
+              <div class="text-overlay3">"The future depends on what you do today."</div>
+          </div>
+          <div class="image-slide">
+              <img src="carres1/car13.jpeg" alt="Motivation 4">
+              <div class="text-overlay4">"Opportunities don’t happen. You create them."</div>
+          </div>
+      </div>
+      <div class="arrow right" onclick="nextSlide()">&#10095;</div>
+  
+      <!-- Dots at the bottom -->
+      <div class="dots">
+          <span class="dot small-dot"></span>
+          <span class="dot medium-dot"></span>
+          <span class="dot large-dot"></span>
+          <span class="dot medium-dot"></span>
+          <span class="dot small-dot"></span>
+      </div>
+  
+      <!-- Play/Pause Button -->
+      <button class="pause-button" id="pauseButton" onclick="togglePause()">Pause</button>
+  </div>
+  
+  <script>
+      let currentIndex = 0;
+      const slides = document.querySelectorAll('.image-slide');
+      const dots = document.querySelectorAll('.dot');
+      let autoScrollInterval;
+      let isPaused = false;
+  
+      // Function to go to the previous slide
+      function prevSlide() {
+          currentIndex = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
+          updateSlider();
+      }
+  
+      // Function to go to the next slide
+      function nextSlide() {
+          currentIndex = (currentIndex === slides.length - 1) ? 0 : currentIndex + 1;
+          updateSlider();
+      }
+  
+      // Update slider position and active dot
+      function updateSlider() {
+          const offset = -currentIndex * 100; // 100% of the width for each image (one image at a time)
+          document.querySelector('.slider-container').style.transform = `translateX(${offset}%)`;
+  
+          // Update dots
+          dots.forEach((dot, index) => {
+              dot.classList.remove('active');
+              if (index === currentIndex) {
+                  dot.classList.add('active');
+              }
+          });
+      }
+  
+      // Start automatic sliding
+      function startAutoScroll() {
+          autoScrollInterval = setInterval(nextSlide, 3000); // Change slide every 3 seconds
+      }
+  
+      // Pause or resume the auto-scrolling
+      function togglePause() {
+          if (isPaused) {
+              startAutoScroll();
+              document.getElementById('pauseButton').textContent = 'Pause';
+          } else {
+              clearInterval(autoScrollInterval);
+              document.getElementById('pauseButton').textContent = 'Play';
+          }
+          isPaused = !isPaused;
+      }
+  
+      // Initialize the slider
+      updateSlider();
+      startAutoScroll();
+  </script>
+  </div>
+    <div class="container">
+        <div class="content">
+            <h3>looking for a place to work, a family to join?</h3>
+            <h1>Careers</h1>
+            <div class="box">
+                <p>Looking for a place to work, a family to join?</p>
+                <h2>Careers</h2>
+                <p class="text">Meaningful work, constant learning, brilliant people, and a community guided by core values that promote quality, creativity and opportunity in everything we do. There are so many reasons to bring your career here.</p>
+                <div class="card">
+                    <div class="card1">
+                        <h3>Join VIBE Family To:</h3>
+                        <p>
+                              <strong>Be Part of Our Community</strong> – At Vibe, we’re creating more than just products; 
+                            we’re building a family that values innovation, creativity, and collaboration.
+                        </p>
+                        <p>
+                            <strong>Exclusive Benefits</strong> – Gain access to early product previews, behind-the-scenes insights, 
+                            and be the first to hear about new developments.
+                        </p>
+                        <p>
+                            <strong>Your Voice Matters</strong> – As a member of the Vibe family, your feedback and ideas 
+                            play a key role in shaping the future of our products and services.
+                        </p>
+                    </div>
+                    
+                    <div class="card2">
+                        <h3>Your Benefits:</h3>
+                        <p>
+                            <strong>Early Access to Innovation</strong> – Be the first to experience Vibe’s latest products 
+                            and gain exclusive insights into cutting-edge advancements.
+                        </p>
+                        <p>
+                            <strong>Growth and Networking Opportunities</strong> – Connect with a community of creators, 
+                            innovators, and professionals, opening doors to collaboration and skill development.
+                        </p>
+                        <p>
+                            <strong>Direct Influence</strong> – Your ideas and feedback help shape Vibe’s future, giving 
+                            you an active role in the evolution of our products and solutions.
+                        </p>
+                    </div>
+            </div>
+            </div>
+            <div class="horizontal-box-container">
+                <!-- .NET Development Box -->
+                <div class="horizontal-content-box">
+                  <div class="horizontal-image-section">
+                    <img src="./carrers/net.png" alt=".NET Development">
+                  </div>
+                  <div class="horizontal-description-section">
+                    <h2>.NET Development</h2>
+                    <p>
+                      .NET development involves building robust, scalable, and secure software applications.
+                      From enterprise systems to web and mobile solutions, .NET offers a comprehensive framework.
+                    </p>
+                    <div class="container">
+                      <h4>Skills Required:</h4>
+                      <ul>
+                        <li>Proficiency in C# and .NET Framework</li>
+                        <li>ASP.NET and Web Development</li>
+                        <li>Database Management</li>
+                        <li>Object-Oriented Programming (OOP) and Design Patterns</li>
+                        <li>Version Control (Git)</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="horizontal-apply-button">
+                    <a href="https://forms.gle/BSNwxaLkxsUGhjgF8">  <button>Apply</button></a>
+                  </div>
+                </div>
+            
+                <!-- Java Development Box -->
+                <div class="horizontal-content-box">
+                  <div class="horizontal-image-section">
+                    <img src="./carrers/javadeveloper.png" alt="Java Development">
+                  </div>
+                  <div class="horizontal-description-section">
+                    <h2>Java Development</h2>
+                    <p>
+                      Java development focuses on building secure, scalable, and maintainable software solutions.
+                      From web apps to enterprise systems, Java is a versatile and widely-used language.
+                    </p>
+                    <div class="container">
+                      <h4>Skills Required:</h4>
+                      <ul>
+                        <li>Strong understanding of Java and JVM</li>
+                        <li>Spring Framework and Hibernate</li>
+                        <li>Database Management</li>
+                        <li>Object-Oriented Programming (OOP)</li>
+                        <li>Version Control (Git)</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="horizontal-apply-button">
+                    <a href="https://forms.gle/BSNwxaLkxsUGhjgF8">  <button>Apply</button></a>
+                  </div>
+                </div>
+            
+                <!-- QA Engineer Box -->
+                <div class="horizontal-content-box">
+                  <div class="horizontal-image-section">
+                    <img src="./carrers/qa.jpg" alt="QA Engineer">
+                  </div>
+                  <div class="horizontal-description-section">
+                    <h2>QA Engineer</h2>
+                    <p>
+                      QA Engineers ensure software quality through rigorous testing and validation.
+                      They create and execute test plans to identify and fix defects in the system.
+                    </p>
+                    <div class="container">
+                      <h4>Skills Required:</h4>
+                      <ul>
+                        <li>Manual and Automated Testing</li>
+                        <li>Knowledge of Testing Tools (e.g., Selenium, JUnit)</li>
+                        <li>Understanding of SDLC and STLC</li>
+                        <li>Attention to Detail</li>
+                        <li>Problem-Solving Skills</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="horizontal-apply-button">
+                    <a href="https://forms.gle/BSNwxaLkxsUGhjgF8">  <button>Apply</button></a>
+                  </div>
+                </div>
+            
+                <!-- DevOps Engineer Box -->
+                <div class="horizontal-content-box">
+                  <div class="horizontal-image-section">
+                    <img src="./carrers/devopsvsdeveloper.png" alt="DevOps Engineer">
+                  </div>
+                  <div class="horizontal-description-section">
+                    <h2>DevOps Engineer</h2>
+                    <p>
+                      DevOps Engineers manage deployment, automation, and monitoring. They bridge the gap
+                      between development and operations for seamless delivery of software.
+                    </p>
+                    <div class="container">
+                      <h4>Skills Required:</h4>
+                      <ul>
+                        <li>CI/CD Tools (Jenkins, GitLab)</li>
+                        <li>Cloud Platforms (AWS, Azure)</li>
+                        <li>Containerization (Docker, Kubernetes)</li>
+                        <li>Monitoring and Logging</li>
+                        <li>Scripting Languages (Bash, Python)</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="horizontal-apply-button">
+                    <a href="https://forms.gle/BSNwxaLkxsUGhjgF8">  <button>Apply</button></a>
+                  </div>
+                </div>
+            
+                <!-- Business Analyst Box -->
+                <div class="horizontal-content-box">
+                  <div class="horizontal-image-section">
+                    <img src="./carrers/Business_Analyst.avif" alt="Business Analyst">
+                  </div>
+                  <div class="horizontal-description-section">
+                    <h2>Business Analyst</h2>
+                    <p>
+                      Business Analysts analyze data, define business needs, and suggest solutions to improve
+                      processes. They act as a liaison between stakeholders and the development team.
+                    </p>
+                    <div class="container">
+                      <h4>Skills Required:</h4>
+                      <ul>
+                        <li>Data Analysis and Reporting</li>
+                        <li>Requirement Gathering and Documentation</li>
+                        <li>Problem-Solving Skills</li>
+                        <li>Communication and Collaboration</li>
+                        <li>Understanding of Business Processes</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="horizontal-apply-button">
+                    <a href="https://forms.gle/BSNwxaLkxsUGhjgF8">  <button>Apply</button></a>
+                  </div>
+                </div>
+            
+                <!-- Full Stack Developer Box -->
+                <div class="horizontal-content-box">
+                  <div class="horizontal-image-section">
+                    <img src="./carrers/full-stack-developer.png" alt="Full Stack Developer">
+                  </div>
+                  <div class="horizontal-description-section">
+                    <h2>Full Stack Developer</h2>
+                    <p>
+                      Full Stack Developers work on both front-end and back-end development. They create
+                      end-to-end solutions for software applications, including database management.
+                    </p>
+                    <div class="container">
+                      <h4>Skills Required:</h4>
+                      <ul>
+                        <li>Front-End Technologies (HTML, CSS, JavaScript)</li>
+                        <li>Back-End Frameworks (Node.js, Django)</li>
+                        <li>Database Management (SQL, NoSQL)</li>
+                        <li>Version Control (Git)</li>
+                        <li>API Design and Development</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="horizontal-apply-button">
+                    <a href="https://forms.gle/BSNwxaLkxsUGhjgF8">  <button>Apply</button></a>
+                  </div>
+                </div>
+            
+                <!-- Data Science Developer Box -->
+                <div class="horizontal-content-box">
+                  <div class="horizontal-image-section">
+                    <img src="./carrers/datasceince.jpg" alt="Data Science Developer">
+                  </div>
+                  <div class="horizontal-description-section">
+                    <h2>Data Science Developer</h2>
+                    <p>
+                      Data Science Developers analyze and interpret complex data using statistical techniques.
+                      They build predictive models and extract insights for business decision-making.
+                    </p>
+                    <div class="container">
+                      <h4>Skills Required:</h4>
+                      <ul>
+                        <li>Data Analysis and Visualization</li>
+                        <li>Machine Learning Algorithms</li>
+                        <li>Python/R Programming</li>
+                        <li>Statistics and Probability</li>
+                        <li>Big Data Tools (Spark, Hadoop)</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="horizontal-apply-button">
+                    <a href="https://forms.gle/BSNwxaLkxsUGhjgF8">  <button>Apply</button></a>
+                  </div>
+                </div>
+              </div>
+   
+        <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky",window.scrollY > 0);
+        });
+        </script>
+        <script>
+            function navigate() {
+              // Get the selected value from the dropdown
+              const dropdown = document.getElementById("dropdown");
+              const selectedValue = dropdown.value;
+          
+              // If a valid value is selected, navigate to the URL
+              if (selectedValue) {
+                window.location.href = selectedValue;
+                
+                // Reset the dropdown to "About Us" after redirection
+                dropdown.value = "";
+              }
+            }
+          </script>
+</body>
+</html>

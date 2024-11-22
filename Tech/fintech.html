@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruby on Rails Development Services</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.8;
+            color: #2a2a2a;
+            background-color: #f5f8fb;
+            padding: 40px;
+            margin: 0;
+        }
+
+        /* Container styling */
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 35px;
+            background-color: #ffffff;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 18px 36px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Typography */
+        h1 {
+            color: #0078d4;
+            font-size: 2.4em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #0056a1;
+            font-size: 1.8em;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            color: #555555;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        /* Scroll animations */
+        h1, h2, p {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Special hover effects for headings */
+        h1:hover, h2:hover {
+            color: #0056a1;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Financial Software Development Company</h1>
+        <h2>Cutting-edge Solutions for Different Financial Domains</h2>
+        <p>At Vibe, we are dedicated to crafting a wide range of specialized software solutions that cater to various aspects of financial domains and operations.</p>
+
+        <h2>Banking Software</h2>
+        <p>We develop comprehensive banking software tailored for core banking functions, online and mobile banking. Our solutions ensure seamless, secure, and efficient banking experiences for both banks and their customers.</p>
+
+        <h2>Payment Processing Systems</h2>
+        <p>Our payment processing systems can handle electronic transactions with ease. This includes credit/debit card processing and mobile payment solutions, providing secure and efficient transaction processing capabilities.</p>
+
+        <h2>Financial Management and Accounting</h2>
+        <p>We offer sophisticated solutions for financial management and accounting. Our software supports functions like accounting, budgeting, financial reporting, and audit management, helping businesses maintain accuracy and compliance.</p>
+
+        <h2>Trading and Investment Platforms</h2>
+        <p>We develop intuitive trading and investment platforms for stock trading, portfolio management, and financial analytics. These platforms are designed to provide real-time insights and tools for effective investment decision-making.</p>
+
+        <h2>Risk Management Systems</h2>
+        <p>Our risk management systems are engineered to provide comprehensive risk assessment, compliance management, and fraud detection tools. These systems help financial institutions to maintain integrity and regulatory compliance.</p>
+
+        <h2>Insurance Software</h2>
+        <p>We create insurance software that streamlines policy management, underwriting, claims processing, and customer relationship management. Our solutions are designed to enhance the efficiency and effectiveness of insurance operations.</p>
+    </div>
+
+    <script>
+        // JavaScript to handle fade-in animation on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('h1, h2, p');
+
+            function fadeInOnScroll() {
+                elements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight - 100) {
+                        element.classList.add('fade-in');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', fadeInOnScroll);
+            fadeInOnScroll(); // Run on page load
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+.container1{
+    margin: 30px;
+}
+.container1 h1{
+    color: darkblue;
+    font-size: 32px;
+}
+.container1 p{
+    padding-left: 90px;
+    font-size: 19px;
+    line-height: 1.4;
+}
+.container1 img{
+    height: 500px;
+   width: 100%;
+}
+.container1 img:hover{
+    opacity: 0.7;
+}
+.card{
+    margin-top: 90px;
+    margin-bottom: 60px;
+}
+
+.card img{
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 580px;
+    height: 320px;
+}
+.card img:hover{
+    opacity: 0.7;
+}
+.logo{
+    float:right;
+   margin-left: 10px;
+}
+.logo img{
+    box-sizing: border-box;
+    padding: 3px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 3px solid rgb(57, 95, 165);
+}
+
+
+.logo h1{
+    font-size: 20px;
+    color:rgb(57, 95, 165) ;
+}
+.logo  ul li{
+    font-size: 17px;
+}
+.logo p{
+    width: 600px;
+    font-size: 18px;
+    margin-left: -83px;
+}
+.logo .btn{
+    color: orangered;
+    border: 2px solid orangered;
+    background-color: aliceblue;
+    width: 150px;
+    font-size: 18px;
+    height: 36px;
+}
+.logo .btn:hover{
+ background-color: orangered;
+ color: white;
+}

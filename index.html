@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Vibe website</title>
+  
+    
+     
+</head>
+<body>
+
+    <header class="stick">
+        <div class="navbar">
+            <div class="logo">
+                <img src="Nlogo.png" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="tech.html">TECHNOLOGIES</a></li>
+                <li><a href="careers.html">CAREERS</a></li>
+                <li><a href="#">PRODUCT_UNIVERSE</a></li>
+                <li><a href="contact.html"><button class="btn1">CONTACT US</button></a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="banner">
+            <video autoplay muted loop class="background-video">
+                <source src="Vibe.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h1>
+                
+                <span>Virtual</span>
+                <span>Intelligence</span>
+                <span>Bold</span>
+                <span>Execution</span>
+            </h1>
+        </div>
+    </div>
+    
+    <script>
+        // JavaScript to handle dropdown navigation
+        function navigate() {
+            const dropdown = document.getElementById("dropdown");
+            const selectedValue = dropdown.value;
+            if (selectedValue) {
+                window.location.href = selectedValue;
+            }
+        }
+    </script>
+    
+  
+  <h3>Rise and Shine with the VIBE of Success</h3>
+  <div class="slider">
+    <div class="arrow left" onclick="prevSlide()">&#10094;</div>
+    <div class="slider-container" id="slider">
+        <img src="image/m.jpg" alt="Motivation 1">
+        <img src="image/mo.jpg" alt="Motivation 2">
+        <img src="image/mot.jpg" alt="Motivation 3">
+        <img src="image/moti.jpg" alt="Motivation 4">
+        <img src="image/motiv.jpg" alt="Motivation 5">
+        <img src="image/motivation.jpg" alt="Motivation 6">
+        <img src="image/motivation1.jpg" alt="Motivation 2">
+        <img src="image/motivation2.jpg" alt="Motivation 3">
+        <img src="image/motivation3.jpg" alt="Motivation 4">
+        <img src="image/motivation4.jpg" alt="Motivation 5">
+        <img src="image/motivation5.jpg" alt="Motivation 6">
+        <img src="image/motivation6.jpg" alt="Motivation 7">
+        <img src="image/motivation7.jpg" alt="Motivation 8">
+        <img src="image/motivation8.jpg" alt="Motivation 9">
+        <img src="image/motivation9.jpg" alt="Motivation 10">
+        <img src="image/motivation10.jpg" alt="Motivation 11">
+        <img src="image/motivation11.jpg" alt="Motivation 12">
+        <img src="image/motivation12.jpg" alt="Motivation 13">
+        <img src="image/motivation13.jpg" alt="Motivation 14">
+        <img src="image/motivation14.jpg" alt="Motivation 15">
+        <img src="image/motivation15.jpg" alt="Motivation 16">
+        <img src="image/motivation16.jpg" alt="Motivation 17">
+        <img src="image/motivation17.jpg" alt="Motivation 18">
+        <img src="image/motivation18.jpg" alt="Motivation 19">
+        <img src="image/motivation19.jpg" alt="Motivation 20">
+        <img src="image/motivation20.jpg" alt="Motivation 21">
+        <img src="image/motivation21.jpg" alt="Motivation 22">
+        <img src="image/motivation22.jpg" alt="Motivation 23">
+        <img src="image/motivation23.jpg" alt="Motivation 24">
+        <img src="image/motivation24.jpg" alt="Motivation 25">
+        <img src="image/motivation25.jpg" alt="Motivation 26">
+        <img src="image/motivation26.jpg" alt="Motivation 27">
+        <img src="image/motivation27.jpg" alt="Motivation 28">
+        <img src="image/motivation28.jpg" alt="Motivation 29">
+        <img src="image/motivation29.jpg" alt="Motivation 30">
+        <img src="image/motivation30.jpg" alt="Motivation 31">
+        <img src="image/motivation31.jpg" alt="Motivation 32">
+    </div>
+    <div class="arrow right" onclick="nextSlide()">&#10095;</div>
+    <div class="dots">
+        <span class="dot small-dot"></span>
+        <span class="dot small-dot"></span>
+        <span class="dot medium-dot"></span>
+        <span class="dot large-dot"></span>
+        <span class="dot medium-dot"></span>
+        <span class="dot small-dot"></span>
+    </div>
+    <button class="pause-button" id="pauseButton" onclick="togglePause()">Pause</button>
+</div> 
+   <script>
+    let currentIndex = 0;
+let isPaused = false;
+const slider = document.getElementById('slider');
+const pauseButton = document.getElementById('pauseButton');
+
+function nextSlide() {
+    const images = slider.children;
+    currentIndex = (currentIndex + 1) % images.length;
+    updateSlider();
+}
+
+function prevSlide() {
+    const images = slider.children;
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    updateSlider();
+}
+
+function updateSlider() {
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+function autoScroll() {
+    if (!isPaused) {
+        nextSlide();
+    }
+}
+
+// Pause and Play functionality
+function togglePause() {
+    isPaused = !isPaused;
+    pauseButton.textContent = isPaused ? 'Play' : 'Pause';
+}
+
+// Start the auto-scroll
+setInterval(autoScroll, 4000); // Scrolls every 3 seconds
+
+   </script>
+    <div class="vibe-section">
+        <div class="text">
+            <h2>Who We Are</h2>
+            <p>
+                Welcome to Vibe! We are a passionate team dedicated to transforming businesses through innovative software solutions. Our mission is to empower organizations with user-friendly tools that drive success and efficiency. At Vibe, we believe in collaboration, integrity, and excellence, always striving to exceed expectations. Join us on this exciting journey as we harness the power of Virtual Intelligence and Bold Execution to help you achieve your goals!
+            </p>
+        </div>
+    </div>
+    <script>
+       function animateTextSection() {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Reset the animation
+                entry.target.classList.remove('animate');
+                void entry.target.offsetWidth; // Trigger reflow
+                entry.target.classList.add('animate'); // Reapply animation class
+            }
+        });
+    });
+
+    // Observe the text section
+    const textSection = document.querySelector('.vibe-section .text');
+    observer.observe(textSection);
+}
+
+// Run the function when the page loads
+document.addEventListener("DOMContentLoaded", animateTextSection);
+
+    </script>
+    
+    </div>
+    <h1>Meet the Team Behind the Magic</h1>
+    <div class="profiles-wrapper">
+        <div class="profile-container1">
+            <div class="profile-image">
+                <img src="f.png" alt="Profile Image">
+            </div>
+            
+            <div class="profile-info">
+                <h2>Jane Smith</h2>
+                <p><strong>Email:</strong> jane.smith@example.com</p>
+                <p><strong>Role:</strong> CTO</p>
+                <p><strong>Location:</strong> Los Angeles, USA</p>
+                <p><strong>Bio:</strong> An innovative leader with a passion for technology.</p>
+            </div>
+        </div>
+    
+        <div class="profile-container2">
+            <div class="profile-image">
+                <img src="f.png" alt="Profile Image">
+            </div>
+            <div class="profile-info">
+                <h2>Mike Johnson</h2>
+                <p><strong>Email:</strong> mike.johnson@example.com</p>
+                <p><strong>Role:</strong> CFO</p>
+                <p><strong>Location:</strong> Chicago, USA</p>
+                <p><strong>Bio:</strong> Financial expert with a focus on tech industry.</p>
+            </div>
+        </div>
+    
+        <div class="profile-container3">
+            <div class="profile-image">
+                <img src="f.png" alt="Profile Image">
+            </div>
+            <div class="profile-info">
+                <h2>Emma Brown</h2>
+                <p><strong>Email:</strong> emma.brown@example.com</p>
+                <p><strong>Role:</strong> COO</p>
+                <p><strong>Location:</strong> Miami, USA</p>
+                <p><strong>Bio:</strong> Operations leader with a drive for excellence.</p>
+            </div>
+        </div>
+    
+        <div class="profile-container4">
+            <div class="profile-image">
+                <img src="f.png" alt="Profile Image">
+            </div>
+            <div class="profile-info">
+                <h2>Mike Johnson</h2>
+                <p><strong>Email:</strong> mike.johnson@example.com</p>
+                <p><strong>Role:</strong> CFO</p>
+                <p><strong>Location:</strong> Chicago, USA</p>
+                <p><strong>Bio:</strong> Financial expert with a focus on tech industry.</p>
+            </div>
+        </div>
+    </div>
+<script>
+   function animateOnScroll() {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Reset animation by removing the class
+                entry.target.classList.remove(entry.target.dataset.animate);
+                
+                // Re-trigger the animation
+                void entry.target.offsetWidth; // Trigger reflow to restart the animation
+                
+                // Add the animation class to play the animation again
+                entry.target.classList.add(entry.target.dataset.animate);
+            }
+        });
+    });
+
+    // Set data-animate attribute for each container
+    document.querySelector('.profile-container1').setAttribute('data-animate', 'animate-top');
+    document.querySelector('.profile-container2').setAttribute('data-animate', 'animate-top');
+    document.querySelector('.profile-container3').setAttribute('data-animate', 'animate-top');
+    document.querySelector('.profile-container4').setAttribute('data-animate', 'animate-top');
+
+    // Observe each container
+    const profileContainers = document.querySelectorAll('.profile-container1, .profile-container2, .profile-container3, .profile-container4');
+    profileContainers.forEach(container => observer.observe(container));
+}
+
+// Run the function when the page loads
+document.addEventListener("DOMContentLoaded", animateOnScroll);
+
+</script>    
+<div class="container1">
+    <h1>INDUSTRIES</h1>
+    <p>We work on cutting-edge technologies to enhance the existence of our customers in the digital world. Having deep knowledge of dominant industries, our expert team of developers, testers, and consultants will suggest the most significant combination of technologies that fit best for your project in terms of cost, time, and quality. At TPS, we work with common software environments, coding languages, or APIs. However, we are open to discussing if your expectations are not included in these.</p>
+    <img src="industries.png" alt="Industries Image">
+
+    <!-- Industry Sections -->
+    <div class="industry-section">
+        <img src="ecom.png" alt="E-Commerce Image" class="industry-image">
+        <div class="industry-content">
+            <img src="i1.png" alt="E-Commerce Icon" class="icon">
+            <h2>E-COMMERCE AND RETAIL</h2>
+            <p>As a leading software solution company, we have always focused on improving productivity and delivering innovative solutions to our customers. At TPS Software, we empower you with end-to-end B2B and B2C software solutions for E-commerce and retail distribution.</p>
+            <button class="btn" onclick="toggleView('demo1', this)">VIEW MORE</button>
+            <div id="demo1" class="additional-info" style="display: none;"></div>
+        </div>
+    </div>
+
+    <div class="industry-section">
+        <img src="book.png" alt="Education Image" class="industry-image">
+        <div class="industry-content">
+            <img src="i2.png" alt="Education Icon" class="icon">
+            <h2>EDUCATION INDUSTRY</h2>
+            <p>The education industry is thriving hard to become more productive and advance. At TPS Software, we work in partnership with educators to design and develop software solutions they need to help their students succeed.</p>
+            <button class="btn" onclick="toggleView('demo2', this)">VIEW MORE</button>
+            <div id="demo2" class="additional-info" style="display: none;"></div>
+        </div>
+    </div>
+
+    <div class="industry-section">
+        <img src="soft.png" alt="Independent Software Vendor Image" class="industry-image">
+        <div class="industry-content">
+            <img src="i3.png" alt="Software Icon" class="icon">
+            <h2>INDEPENDENT SOFTWARE VENDOR</h2>
+            <p>Development of truly usable and successful solutions takes more than just technology. It requires an in-depth understanding of the industry, an appreciation of its unique challenges and opportunities, and familiarity with how employees work.</p>
+            <button class="btn" onclick="toggleView('demo3', this)">VIEW MORE</button>
+            <div id="demo3" class="additional-info" style="display: none;"></div>
+        </div>
+    </div>
+
+    <div class="industry-section">
+        <img src="f.png" alt="Finance Image" class="industry-image">
+        <div class="industry-content">
+            <img src="i4.png" alt="Finance Icon" class="icon">
+            <h2>FINANCE AND INSURANCE</h2>
+            <p>Fintech is a new financial industry that utilizes technology to automate and enhance financial activities. Fintech companies are merging financial and technical expertise to create innovative solutions transforming the world of finance.</p>
+            <button class="btn" onclick="toggleView('demo4', this)">VIEW MORE</button>
+            <div id="demo4" class="additional-info" style="display: none;"></div>
+        </div>
+    </div>
+
+    <div class="industry-section">
+        <img src="health.png" alt="Healthcare Image" class="industry-image">
+        <div class="industry-content">
+            <img src="i5.png" alt="Healthcare Icon" class="icon">
+            <h2>HEALTH CARE</h2>
+            <p>Health IT is evolving rapidly, and mobile applications are innovating the industry to deliver high-end business management systems and patient experiences. TPS Software converts your dream into technology to overcome digital challenges.</p>
+            <button class="btn" onclick="toggleView('demo5', this)">VIEW MORE</button>
+            <div id="demo5" class="additional-info" style="display: none;"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleView(demoId, button) {
+        const demoDiv = document.getElementById(demoId);
+    
+        if (!demoDiv) {
+            console.error(`No element found with id ${demoId}`);
+            return;
+        }
+    
+        if (demoDiv.style.display === "none" || demoDiv.innerHTML.trim() === "") {
+            // Set content dynamically
+            let additionalContent = "";
+            switch (demoId) {
+                case 'demo1':
+                    additionalContent = `
+                        <p>Your business growth with cutting-edge technology to provide you valuable mobile and web solutions.</p>
+                        <p>The scope of services includes:</p>
+                        <ul>
+                            <li>Ecommerce App Development</li>
+                            <li>Web Application and Portal</li>
+                            <li>B2B E-Commerce Solutions</li>
+                            <li>B2C E-Commerce Solutions</li>
+                            <li>POS Systems Integration</li>
+                        </ul>`;
+                    break;
+    
+                case 'demo2':
+                    additionalContent = `
+                        <p>We have talented developers and designers with great experience in developing endless E-learning and management software solutions.</p>
+                        <p>The scope of services includes:</p>
+                        <ul>
+                            <li>Online E-Learning Solutions</li>
+                            <li>Remote Learning Websites</li>
+                            <li>Institute Management Software</li>
+                            <li>Mobile Learning Applications</li>
+                            <li>Application Development and Maintenance</li>
+                        </ul>`;
+                    break;
+    
+                case 'demo3':
+                    additionalContent = `
+                        <p>With a strong focus on dominant industries and quick adoption of cutting-edge technologies, we deliver value in a faster and more cost-efficient manner.</p>
+                        <p>The scope of services includes:</p>
+                        <ul>
+                            <li>Product engineering services</li>
+                            <li>Fast go-to-market development</li>
+                            <li>Independent test center</li>
+                            <li>Porting & migration</li>
+                        </ul>`;
+                    break;
+    
+                case 'demo4':
+                    additionalContent = `
+                        <p>As a leading software development firm, we provide industry-leading software engineering services and solutions tailored to your needs.</p>
+                        <p>The scope of services includes:</p>
+                        <ul>
+                            <li>Smart Contract Development</li>
+                            <li>Decentralized App Development</li>
+                            <li>Private Blockchain Development</li>
+                            <li>Crypto Wallet Development</li>
+                            <li>Exchange Platforms</li>
+                            <li>Insurance Management</li>
+                            <li>Custom Blockchain Solutions</li>
+                            <li>Enterprise Application Integration (EAI)</li>
+                        </ul>`;
+                    break;
+    
+                case 'demo5':
+                    additionalContent = `
+                        <p>Our expert team collaborates with healthcare companies to design and develop software solutions that enhance patient care.</p>
+                        <p>The scope of services includes:</p>
+                        <ul>
+                            <li>Health Management Information Systems (HMIS)</li>
+                            <li>Web Applications and Portals</li>
+                            <li>Electronic Medical Records (EMR)</li>
+                            <li>Hospital Management Software</li>
+                            <li>Enterprise Content Management</li>
+                        </ul>`;
+                    break;
+    
+                default:
+                    console.error(`No content defined for ${demoId}`);
+                    break;
+            }
+    
+            if (additionalContent) {
+                demoDiv.innerHTML = additionalContent;
+                demoDiv.style.display = "block";
+                demoDiv.style.transition = "opacity 0.3s ease-in-out"; // Smooth appearance
+                demoDiv.style.opacity = "1"; // Ensure visible
+                button.innerText = "VIEW LESS";
+            } else {
+                console.error(`No additional content set for id ${demoId}`);
+            }
+        } else {
+            demoDiv.style.transition = "opacity 0.3s ease-in-out"; // Smooth disappearance
+            demoDiv.style.opacity = "0"; // Fade out
+            setTimeout(() => {
+                demoDiv.innerHTML = ""; // Clear content after fade-out
+                demoDiv.style.display = "none";
+            }, 300); // Match the transition duration
+            button.innerText = "VIEW MORE";
+        }
+    }
+    
+</script>
+    <footer class="footer">
+        <img src="Nlogo.png" alt="Logo" class="footer-logo">
+        <div class="social-icons">
+          <div class="icon-container">
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <div class="icon-label">Instagram</div>
+          </div>
+          <div class="icon-container">
+            <a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i></a>
+            <div class="icon-label">Email</div>
+          </div>
+          <div class="icon-container">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <div class="icon-label">Facebook</div>
+          </div>
+          <div class="icon-container">
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <div class="icon-label">Twitter</div>
+          </div>
+          <div class="icon-container">
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <div class="icon-label">LinkedIn</div>
+          </div>
+        </div>
+        <div class="bottom-section">
+          <p><i class="fas fa-envelope"></i>Email: your-email@example.com</p>
+          <p><i class="fas fa-phone"></i>Phone: +123 456 7890</p>
+          <p class="pav"><i class="fas fa-map-marker-alt"></i>Location: Your Address Here</p>
+        </div>
+      </footer>
+      <div class="bottom-line">© 2024 Your Company Name. All rights reserved.</div>     
+       <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky",window.scrollY > 0);
+        });
+    </script>
+     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const words = document.querySelectorAll(".banner h1 span");
+            words.forEach((word, index) => {
+                setTimeout(() => {
+                    word.style.opacity = 1; // Show the word
+                    word.style.transform = "scale(1)"; // Apply the zoom effect
+                }, index * 500); // Delay for each word
+            });
+        });
+    </script>
+   <script>
+    function navigate() {
+      // Get the selected value from the dropdown
+      const dropdown = document.getElementById("dropdown");
+      const selectedValue = dropdown.value;
+  
+      // If a valid value is selected, navigate to the URL
+      if (selectedValue) {
+        window.location.href = selectedValue;
+        
+        // Reset the dropdown to "About Us" after redirection
+        dropdown.value = "";
+      }
+    }
+  </script>
+  
+</body>
+</html>

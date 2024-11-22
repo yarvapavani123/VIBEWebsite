@@ -1,0 +1,279 @@
+body{
+    margin:0;
+    padding: 0;
+}
+.banner {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #200e0e;
+    background-color: #f4f4f4;
+    padding: 5px;
+    left:0;
+    top:0
+}
+header {
+   
+    font-size: 20px;
+
+   
+    
+}
+.navbar ul{
+    margin-left: 500px;
+    margin-top: -76px;
+    
+}
+.navbar ul li{
+    list-style: none;
+   float: left;
+   padding-left: 40px;
+   
+}
+.navbar ul li a:hover{
+    color: rgb(19, 120, 160);
+   
+  
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:black;
+  
+}
+
+.btn1 {
+    margin-top: -7px;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #ee5253, #ff9ff3);
+   color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn1:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+.logo img {
+   
+    width: 90px;
+    border: 1px solid black;
+    height: 90px;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-top: 10px;
+
+}
+.navbar li select{
+  
+    border: none;
+    background-color: transparent;
+    font-size:24px ;
+    width: 130px;
+    cursor: pointer;
+}
+   .navbar li select option{
+    font-size: 20px;
+    cursor: pointer;
+
+   }
+header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    box-sizing: border-box;
+    background-color: white;
+    z-index: 1000; /* Ensure it stays above other elements */
+    box-shadow: 0 1px 13px;
+}
+
+
+header.sticky .navbar li{
+    padding-top: 30px;
+    font-size: 20px;
+}
+header.sticky .navbar li a{
+
+    color: #111;
+
+}
+header.sticky .navbar li a:hover{
+    color:#ff0157
+}
+header.sticky .logo img{
+    margin-left: 30px;
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+
+.slider {
+    border-radius: 10px;
+   margin-left: 40px;
+   margin-top: 80px;
+    position: relative;
+    width: 100%;
+    height: 520px;
+    max-width: 1200px; /* Set a maximum width */
+    min-width: 600px; /* Set a minimum width */
+    overflow: hidden;
+}
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Arrow styles */
+.arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    color: white;
+    z-index: 1;
+    cursor: pointer;
+    transform: translateY(-50%);
+    padding: 10px;
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
+/* Dots container at the bottom */
+.dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.small-dot {
+    width: 10px;
+    height: 10px;
+}
+
+.medium-dot {
+    width: 12px;
+    height: 12px;
+}
+
+.large-dot {
+    width: 15px;
+    height: 15px;
+}
+
+.active {
+    background-color: #ff5722;
+}
+
+/* Styling for images and text */
+.slider-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+
+
+
+
+.image-slide {
+    width: 100%;
+    flex-shrink: 0;
+    position: relative;
+}
+h1{
+    margin-top: 60px;
+    text-align: center;
+    color: rgb(9, 110, 150);
+    margin-bottom: -40px;
+}
+.technologies-container {
+   margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 1200px;
+    
+}
+
+.technology {
+    width: 30%;
+  
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.image {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.05);
+}
+
+.text-overlay {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.image:hover .text-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hidden-technologies {
+    display: none; /* Initially hidden */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%; /* Make sure it spans the entire container */
+}
+
+button {
+   
+  
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+

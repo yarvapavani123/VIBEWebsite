@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer with Animation</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    /* Footer styles */
+    .footer {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: background-color 0.9s ease;
+      height: 300px;
+    }
+    .footer:hover {
+      background-color: #111;
+    }
+    .footer-logo {
+        margin-right: 1199px;
+     
+      border-radius: 50%;
+      font-size: 29px;
+      height: 70px;
+      width: 70px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    
+    .social-icons {
+      display: flex;
+      gap: 30px;
+      transition: transform 0.8s ease;
+      font-size: 60px; /* Increased icon size */
+      margin-bottom: 90px;
+    }
+    .icon-container {
+      text-align: center;
+    }
+    .social-icons a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+      display: block;
+    }
+    .social-icons a:hover {
+      color: #00bcd4;
+    }
+    .icon-label {
+      font-size: 14px;
+      margin-top: 5px;
+      color: #bbb;
+    }
+    .bottom-section {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      bottom: 20px;
+      padding: 20 20px;
+    }
+    .bottom-section p {
+        display: flex;
+        align-items: center;
+        margin: 2;
+        color: #fff;
+        transition: color 0.3s; /* Added transition for smooth color change */
+      }
+      .pav{
+        margin-right: 60px;
+      }
+      .bottom-section p:hover {
+        color: #00bcd4; /* Change to your desired hover color */
+      }
+    .bottom-section i {
+      margin-right: 10px;
+      font-size: 18px;
+    }
+    .bottom-line {
+      border-top: 1px solid #555;
+      padding-top: 15px;
+      text-align: center;
+      height: 30px;
+      color: #1a0808;
+      font-size: 17px;
+      transition: color 0.5s;
+      background-color: rgba(165, 217, 224, 0.719);
+    }
+    .bottom-line:hover {
+      color: #c70d0d;
+    }
+  </style>
+</head>
+<body>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <img src="logo.jpg" alt="Logo" class="footer-logo">
+    <div class="social-icons">
+      <div class="icon-container">
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <div class="icon-label">Instagram</div>
+      </div>
+      <div class="icon-container">
+        <a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i></a>
+        <div class="icon-label">Email</div>
+      </div>
+      <div class="icon-container">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <div class="icon-label">Facebook</div>
+      </div>
+      <div class="icon-container">
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <div class="icon-label">Twitter</div>
+      </div>
+      <div class="icon-container">
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <div class="icon-label">LinkedIn</div>
+      </div>
+    </div>
+    <div class="bottom-section">
+      <p><i class="fas fa-envelope"></i>Email: your-email@example.com</p>
+      <p><i class="fas fa-phone"></i>Phone: +123 456 7890</p>
+      <p class="pav"><i class="fas fa-map-marker-alt"></i>Location: Your Address Here</p>
+    </div>
+  </footer>
+  <div class="bottom-line">© 2024 Your Company Name. All rights reserved.</div>
+</body>
+</html>

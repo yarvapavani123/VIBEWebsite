@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industries Section</title>
+    <style>
+        .container1 {
+            margin: 30px;
+        }
+        .container1 h1 {
+            color: darkblue;
+            font-size: 32px;
+        }
+        .container1 p {
+            padding-left: 90px;
+            font-size: 19px;
+            line-height: 1.4;
+        }
+        .container1 img {
+            height: 500px;
+            width: 100%;
+        }
+        .container1 img:hover {
+            opacity: 0.7;
+        }
+        .c {
+            border-bottom: 2px solid red;
+            margin-top: 90px;
+            margin-bottom: 60px;
+            overflow: auto;
+            padding-bottom: 20px;
+        }
+        .c img {
+            border: 1px solid black;
+            border-radius: 30px;
+            width: 580px;
+            height: 320px;
+        }
+        .c img:hover {
+            opacity: 0.7;
+        }
+        .l {
+            float: right;
+            margin-left: 10px;
+        }
+        .l img {
+            box-sizing: border-box;
+            padding: 3px;
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            border: 3px solid rgb(57, 95, 165);
+        }
+        .l h1 {
+            font-size: 20px;
+            color: rgb(57, 95, 165);
+        }
+        .l ul li {
+            font-size: 17px;
+        }
+        .l p {
+            width: 600px;
+            font-size: 18px;
+            margin-left: -83px;
+        }
+        .l .btn {
+            color: orangered;
+            border: 2px solid orangered;
+            background-color: aliceblue;
+            width: 150px;
+            font-size: 18px;
+            height: 36px;
+            margin-right: 5px;
+        }
+        .l .btn:hover {
+            background-color: orangered;
+            color: white;
+        }
+        .faq {
+            margin-top: 40px;
+        }
+        .faq h1 {
+            font-size: 28px;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container1">
+    <h1>INDUSTRIES</h1>
+    <p>We work on cutting-edge technologies to enhance our customers' presence in the digital world. Our expert team of developers, testers, and consultants will suggest the best combination of technologies that fit your project in terms of cost, time, and quality.</p>
+    <img src="industries.png" alt="Industries Image">
+
+    <!-- Industry 1 -->
+    <div class="c">
+        <img src="ecom.png" alt="">
+            
+        <div class="l">
+            <img src="i1.png" alt="E-Commerce Image" >
+            <h1>E-COMMERCE AND RETAIL DISTRIBUTION</h1>
+            <p>As a leading software solution company, we have always focused on improving productivity and delivering innovative solutions to our customers. At TPS Software, we empower you with end-to-end B2B and B2C software solutions for E-commerce and retail distribution.</p>
+            <button class="btn" onclick="toggleView('demo1', 'viewMoreBtn1', 'viewLessBtn1')">VIEW MORE</button>
+            <button class="btn" onclick="toggleView('demo1', 'viewMoreBtn1', 'viewLessBtn1')" style="display: none;" id="viewLessBtn1">VIEW LESS</button>
+            <div id="demo1"></div>
+        </div>
+    </div>
+
+    <!-- Industry 2 -->
+    <div class="c">
+        <img src="book.png" alt="">
+            
+        <div class="l">
+            <img src="2.png" alt="Education Industry Image">
+            <h1>EDUCATION INDUSTRY</h1>
+
+            <p>The education industry is thriving hard to become more productive and advance. At TPS Software, we work in partnership with educators to design and develop software solutions they need to help their students succeed.</p>
+            <button class="btn" onclick="toggleView('demo2', 'viewMoreBtn2', 'viewLessBtn2')">VIEW MORE</button>
+            <button class="btn" onclick="toggleView('demo2', 'viewMoreBtn2', 'viewLessBtn2')" style="display: none;" id="viewLessBtn2">VIEW LESS</button>
+            <div id="demo2"></div>
+        </div>
+    </div>
+
+    <!-- Industry 3 -->
+    <div class="c">
+        <img src="soft.png" alt="">
+        <div class="l">
+            <img src="i3.png" alt="Independent Software Vendor Image" >
+            <h1>INDEPENDENT SOFTWARE VENDOR</h1>
+            <p>Development of truly usable and successful solutions takes more than just technology. It requires an in-depth understanding of the industry, an appreciation of its unique challenges and opportunities, and familiarity with how employees work.</p>
+            <button class="btn" onclick="toggleView('demo3', 'viewMoreBtn3', 'viewLessBtn3')">VIEW MORE</button>
+            <button class="btn" onclick="toggleView('demo3', 'viewMoreBtn3', 'viewLessBtn3')" style="display: none;" id="viewLessBtn3">VIEW LESS</button>
+            <div id="demo3"></div>
+        </div>
+    </div>
+
+    <!-- Industry 4 -->
+    <div class="c">
+        <img src="f.png" alt="">
+        <div class="l">
+            <img src="i4.png" alt="Finance and Insurance Image" >
+            <h1>FINANCE AND INSURANCE</h1>
+            <p>Fintech is a new financial industry that utilizes technology to automate and enhance financial activities. Fintech companies are merging financial and technical expertise to create innovative solutions transforming the world of finance.</p>
+            <button class="btn" onclick="toggleView('demo4', 'viewMoreBtn4', 'viewLessBtn4')">VIEW MORE</button>
+            <button class="btn" onclick="toggleView('demo4', 'viewMoreBtn4', 'viewLessBtn4')" style="display: none;" id="viewLessBtn4">VIEW LESS</button>
+            <div id="demo4"></div>
+        </div>
+    </div>
+
+    <!-- Industry 5 -->
+    <div class="c">
+        <img src="health.png" alt="">
+        <div class="l">
+            <img src="5.png" alt="Healthcare Image" >
+            <h1>HEALTH CARE</h1>
+            <p>Health IT is evolving rapidly, and mobile applications are innovating the industry to deliver high-end business management systems and patient experiences. TPS Software converts your dream into technology to overcome digital challenges.</p>
+            <button class="btn" onclick="toggleView('demo5', 'viewMoreBtn5', 'viewLessBtn5')">VIEW MORE</button>
+            <button class="btn" onclick="toggleView('demo5', 'viewMoreBtn5', 'viewLessBtn5')" style="display: none;" id="viewLessBtn5">VIEW LESS</button>
+            <div id="demo5"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+   function toggleView(demoId, viewMoreBtnId, viewLessBtnId) {
+    const demoDiv = document.getElementById(demoId);
+    const viewMoreBtn = document.getElementById(viewMoreBtnId);
+    const viewLessBtn = document.getElementById(viewLessBtnId);
+
+    if (demoDiv.innerHTML === "") {
+        let additionalContent;
+        switch (demoId) {
+            case 'demo1':
+                additionalContent = `
+                    <p>Your business growth with cutting-edge technology to provide you valuable mobile and web solutions.</p>
+                    <p>The scope of services includes:</p>
+                    <ul>
+                        <li>Ecommerce App Development</li>
+                        <li>Web Application and Portal</li>
+                        <li>B2B E-Commerce Solutions</li>
+                        <li>B2C E-Commerce Solutions</li>
+                        <li>POS Systems Integration</li>
+                    </ul>
+                `;
+                break;
+            case 'demo2':
+                additionalContent = `
+                    <p>We have talented developers and designers with great experience in developing endless E-learning and management software solutions.</p>
+                    <p>The scope of services includes:</p>
+                    <ul>
+                        <li>Online E-Learning Solutions</li>
+                        <li>Remote Learning Websites</li>
+                        <li>Institute Management Software</li>
+                        <li>Mobile Learning Applications</li>
+                    </ul>
+                `;
+                break;
+            case 'demo3':
+                additionalContent = `
+                    <p>We offer customized solutions for ISVs. With our software engineering expertise, we can help you deliver quality software products.</p>
+                    <p>The scope of services includes:</p>
+                    <ul>
+                        <li>Product Development</li>
+                        <li>UI/UX Design</li>
+                        <li>Business Integration</li>
+                        <li>Automation Testing</li>
+                    </ul>
+                `;
+                break;
+            case 'demo4':
+                additionalContent = `
+                    <p>We help financial and insurance institutions build high-performing platforms for their customers using the latest technology.</p>
+                    <p>The scope of services includes:</p>
+                    <ul>
+                        <li>Banking Solutions</li>
+                        <li>Insurance Management Systems</li>
+                        <li>Financial Apps</li>
+                    </ul>
+                `;
+                break;
+            case 'demo5':
+                additionalContent = `
+                    <p>Our healthcare software solutions support healthcare providers in streamlining their services while improving patient care.</p>
+                    <p>The scope of services includes:</p>
+                    <ul>
+                        <li>Electronic Health Records (EHR)</li>
+                        <li>Healthcare Mobile Applications</li>
+                        <li>Telemedicine Platforms</li>
+                    </ul>
+                `;
+                break;
+            default:
+                additionalContent = "";
+        }
+        demoDiv.innerHTML = additionalContent;
+        viewMoreBtn.style.display = "none";
+        viewLessBtn.style.display = "inline-block"; // Make 'view less' visible
+    } else {
+        demoDiv.innerHTML = ""; // Remove the content when 'view less' is clicked
+        viewMoreBtn.style.display = "inline-block"; // Show 'view more' button again
+        viewLessBtn.style.display = "none"; // Hide 'view less' button again
+    }
+}
+
+</script>
+
+</body>
+</html>

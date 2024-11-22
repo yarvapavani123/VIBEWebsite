@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Company Portfolio</title>
+    <link rel="stylesheet" href="portfoli.css">
+</head>
+<body>
+    <div class="banner">
+        <header>
+            <div class="navbar">
+    
+                <div class="logo">
+                    <img src="logo1.png">
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <select id="dropdown" onchange="navigate()">
+                          <option value="" selected>About Us</option>
+                          <option value="vibe.html">Company</option>
+                          <option value="pricing.html">Pricing</option>
+                          <option value="pricing.html">Insights</option>
+                          <option value="pricing.html">Privacy</option>
+                        </select>
+                      </li>
+                   
+                    <li> <a href="tech.html">Technologies</a></li>
+                    <li> <a href="careers.html">Careers</a></li>
+                   
+                   
+                    <li> <a href="contact.html" > <button class="btn">Contact Us</button></a></li>
+                    
+                </ul>
+            </div>
+        </header>
+       
+        
+        <marquee behavior="alternate" direction="left">
+            Portfolio 
+        </marquee>
+        <img src="p.png" alt="Portfolio Image">
+       
+        
+       </div>
+    <header class="header">
+        <h1>Vibe Company Portfolio</h1>
+        <p>At Vibe, our vision is to lead the digital transformation journey by creating innovative, AI-powered solutions that empower businesses to achieve bold execution.</p>
+    </header>
+
+    <section class="section">
+        <h2>1. Core Focus Areas</h2>
+        <ul>
+            <li><strong>Artificial Intelligence (AI) and Machine Learning (ML)</strong>: Delivering intelligent solutions that analyze data in real time, predict trends, and automate decision-making processes.</li>
+            <li><strong>Business Automation</strong>: Streamlining and automating complex workflows to enhance productivity and reduce human error.</li>
+            <li><strong>Data Analytics and Business Intelligence</strong>: Providing powerful data visualization tools that turn raw data into actionable insights.</li>
+            <li><strong>Scalable Digital Platforms</strong>: Building robust, user-friendly platforms designed to evolve with your business.</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>2. Product Offerings</h2>
+        <h3>a. VibeAnalytics</h3>
+        <p><strong>Overview</strong>: A state-of-the-art AI-driven analytics platform that delivers real-time insights and predictive analysis.</p>
+        <p><strong>Key Features</strong>:</p>
+        <ul>
+            <li>Interactive dashboards with customizable data visualizations</li>
+            <li>Predictive modeling to forecast trends and business outcomes</li>
+            <li>Automated report generation for quick data access</li>
+        </ul>
+
+        <h3>b. VibeAutomation</h3>
+        <p><strong>Overview</strong>: An automation toolkit that streamlines repetitive tasks and integrates seamlessly with existing business processes.</p>
+        <p><strong>Key Features</strong>:</p>
+        <ul>
+            <li>Workflow automation for tasks like data entry and customer service</li>
+            <li>Integration capabilities with CRM, ERP, and other enterprise systems</li>
+            <li>AI-powered chatbots for efficient customer interaction</li>
+        </ul>
+
+        <h3>c. VibeIQ</h3>
+        <p><strong>Overview</strong>: An intelligent decision-support system that leverages data analytics and machine learning to drive informed decision-making.</p>
+        <p><strong>Key Features</strong>:</p>
+        <ul>
+            <li>Scenario analysis and what-if modeling</li>
+            <li>Machine learning algorithms that learn and adapt over time</li>
+            <li>Collaboration features for team-based decision processes</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>3. Industry Application</h2>
+        <p>Our products are designed to be versatile, with applications across numerous sectors, including:
+        </p>
+        <ul>
+            <li><strong>Finance</strong>:Automating financial reporting and risk management. </li>
+            <li><strong>Healthcare</strong>: Enhancing patient care through predictive analytics and automating administrative tasks.
+            </li>
+            <li><strong>Retail</strong>:  Optimizing supply chain management and personalizing customer experiences..</li>
+            <li><strong>Manufacturing</strong>: Streamlining production processes and predicting maintenance needs..</li>
+        </ul>
+    </section>
+    <section class="section">
+        <h2>4. Commitment to Innovation</h2>
+        <p>At Vibe, innovation is at the core of our business. We continuously integrate emerging technologies like AI, machine learning, and automation into our solutions. Our teams foster creativity and collaboration to address real-world challenges and drive digital transformation. Through strategic partnerships and customer feedback, we ensure our products remain ahead of the curve and future-ready.
+        </p>
+        </section>
+        <section class="section">
+           <h2>5. Partner Ecosystem</h2>
+           <p>We collaborate with industry leaders and technology partners to ensure seamless integration and the highest quality of service. Our partner ecosystem enhances the capabilities of our products and expands our reach into new markets.</p> 
+        </section>
+
+    <footer class="footer">
+        <p>Explore how Vibe’s portfolio can transform your business operations, improve efficiency, and drive innovation.</p>
+    </footer>
+    <script>
+        function navigate() {
+          // Get the selected value from the dropdown
+          const dropdown = document.getElementById("dropdown");
+          const selectedValue = dropdown.value;
+      
+          // If a valid value is selected, navigate to the URL
+          if (selectedValue) {
+            window.location.href = selectedValue;
+            
+            // Reset the dropdown to "About Us" after redirection
+            dropdown.value = "";
+          }
+        }
+      </script>
+</body>
+</html>

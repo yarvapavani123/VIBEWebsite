@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technologies Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="technologies-container">
+        <!-- First Set of Technologies -->
+        <div class="technology" onclick="navigateTo('nodejs.html')">
+            <div class="image" style="background-image: url('node.png');">
+                <div class="text-overlay">Node.js Development</div>
+            </div>
+        </div>
+        <div class="technology" onclick="navigateTo('java.html')">
+            <div class="image" style="background-image: url('java.jpg');">
+                <div class="text-overlay">Java Development</div>
+            </div>
+        </div>
+        <div class="technology" onclick="navigateTo('ruby.html')">
+            <div class="image" style="background-image: url('ruby.jpg');">
+                <div class="text-overlay">Ruby Development</div>
+            </div>
+        </div>
+
+        <!-- Hidden Technologies (Initially hidden) -->
+        <div class="hidden-technologies" id="hidden-technologies" style="display: none;">
+            <div class="technology" onclick="navigateTo('ml.html')">
+                <div class="image" style="background-image: url('machinelearing.jpg');">
+                    <div class="text-overlay">Machine Learning</div>
+                </div>
+            </div>
+            <div class="technology" onclick="navigateTo('blockchain.html')">
+                <div class="image" style="background-image: url('blockchain.webp');">
+                    <div class="text-overlay">Blockchain</div>
+                </div>
+            </div>
+            <div class="technology" onclick="navigateTo('ai.html')">
+                <div class="image" style="background-image: url('ai.jpg');">
+                    <div class="text-overlay">AI Development</div>
+                </div>
+            </div>
+            <!-- Newly Added Technologies -->
+            <div class="technology" onclick="navigateTo('healthcare.html')">
+                <div class="image" style="background-image: url('healthcare.png');">
+                    <div class="text-overlay">Health Software</div>
+                </div>
+            </div>
+            <div class="technology" onclick="navigateTo('logistics.html')">
+                <div class="image" style="background-image: url('logistics.jpeg');">
+                    <div class="text-overlay">Logistics Technology</div>
+                </div>
+            </div>
+            <div class="technology" onclick="navigateTo('fintech.html')">
+                <div class="image" style="background-image: url('finance.jpg');">
+                    <div class="text-overlay">Finance Technology</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- View More Button -->
+        <button id="view-more-button" onclick="toggleView()">View More</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

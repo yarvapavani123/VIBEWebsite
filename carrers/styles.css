@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap; /* Allow wrapping of boxes */
+    padding: 20px;
+  }
+  
+  .horizontal-box-container {
+    display: flex;
+    flex-direction: column; /* Stack boxes vertically */
+    gap: 20px; /* Space between boxes */
+  }
+  
+  .horizontal-content-box {
+    display: flex;
+    flex-direction: row;
+    height: 310px;
+    width: 1200px; /* Fixed width for the horizontal box */
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .horizontal-image-section {
+    flex: 1;
+    max-width: 350px; /* Fixed size for the image section */
+    height: 100%; /* Fill the height */
+  }
+  
+  .horizontal-image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .horizontal-description-section {
+    flex: 2;
+    padding: 30px;
+  }
+  
+  .horizontal-description-section h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: #ff006a;
+  }
+  
+  .horizontal-description-section p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.1;
+    margin-top: -5px;
+  }
+  
+  .container p {
+    color: black;
+    font-size: 1.3em;
+    margin-top: 10px;
+  }
+  
+  .container ul {
+    line-height: 1.3;
+    padding-left: 20px;
+    color: #555;
+    margin-top: 5px;
+    font-size: 18px;
+  }
+  
+  .horizontal-apply-button {
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+  }
+  
+  .horizontal-apply-button button {
+    background-color: #ff3c00;
+    color: rgb(255, 255, 255);
+    border: 2px solid orangered;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+  }
+  
+  .horizontal-apply-button button:hover {
+    background-color: #071320;
+    
+       
+  }
+  

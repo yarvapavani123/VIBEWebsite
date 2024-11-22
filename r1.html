@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industries Section</title>
+    <style>
+        .container1 {
+            margin: 30px;
+        }
+        .container1 h1 {
+            color: darkblue;
+            font-size: 32px;
+        }
+        .container1 p {
+            padding-left: 90px;
+            font-size: 19px;
+            line-height: 1.4;
+        }
+        .container1 img {
+            height: 500px;
+            width: 100%;
+        }
+        .container1 img:hover {
+            opacity: 0.7;
+        }
+        .c {
+            border-bottom: 2px solid red;
+            margin-top: 90px;
+            margin-bottom: 60px;
+            overflow: auto;
+            padding-bottom: 20px;
+        }
+        .c img {
+            border: 1px solid black;
+            border-radius: 30px;
+            width: 580px;
+            height: 320px;
+        }
+        .c img:hover {
+            opacity: 0.7;
+        }
+        .l {
+            float: right;
+            margin-left: 10px;
+        }
+        .l img {
+            box-sizing: border-box;
+            padding: 3px;
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            border: 3px solid rgb(57, 95, 165);
+        }
+        .l h1 {
+            font-size: 20px;
+            color: rgb(57, 95, 165);
+        }
+        .l ul li {
+            font-size: 17px;
+        }
+        .l p {
+            width: 600px;
+            font-size: 18px;
+            margin-left: -83px;
+        }
+        .l .btn {
+            color: orangered;
+            border: 2px solid orangered;
+            background-color: aliceblue;
+            width: 150px;
+            font-size: 18px;
+            height: 36px;
+            margin-right: 5px;
+        }
+        .l .btn:hover {
+            background-color: orangered;
+            color: white;
+        }
+        .faq {
+            margin-top: 40px;
+        }
+        .faq h1 {
+            font-size: 28px;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container1">
+    <h1>INDUSTRIES</h1>
+    <p>We work on cutting-edge technologies to enhance our customers' presence in the digital world. Our expert team of developers, testers, and consultants will suggest the best combination of technologies that fit your project in terms of cost, time, and quality.</p>
+    <img src="industries.png" alt="Industries Image">
+
+    <!-- Industry 1 -->
+    <div class="c">
+        <img src="ecom.png" alt="E-Commerce Industry Image">
+        <div class="l">
+            <img src="i1.png" alt="E-Commerce Icon">
+            <h1>E-COMMERCE AND RETAIL DISTRIBUTION</h1>
+            <p>We empower you with end-to-end B2B and B2C software solutions for E-commerce and retail distribution.</p>
+            <button class="btn" onclick="toggleView('demo1', this)">VIEW MORE</button>
+            <div id="demo1"></div>
+        </div>
+    </div>
+
+    <!-- Industry 2 -->
+    <div class="c">
+        <img src="healthcare.png" alt="Healthcare Industry Image">
+        <div class="l">
+            <img src="i2.png" alt="Healthcare Icon">
+            <h1>HEALTHCARE</h1>
+            <p>Our healthcare solutions help organizations improve patient care and streamline healthcare processes.</p>
+            <button class="btn" onclick="toggleView('demo2', this)">VIEW MORE</button>
+            <div id="demo2"></div>
+        </div>
+    </div>
+
+    <!-- Industry 3 -->
+    <div class="c">
+        <img src="finance.png" alt="Finance Industry Image">
+        <div class="l">
+            <img src="i3.png" alt="Finance Icon">
+            <h1>FINANCE AND BANKING</h1>
+            <p>We provide secure and scalable financial software solutions tailored to your business needs.</p>
+            <button class="btn" onclick="toggleView('demo3', this)">VIEW MORE</button>
+            <div id="demo3"></div>
+        </div>
+    </div>
+
+    <!-- Industry 4 -->
+    <div class="c">
+        <img src="education.png" alt="Education Industry Image">
+        <div class="l">
+            <img src="i4.png" alt="Education Icon">
+            <h1>EDUCATION</h1>
+            <p>Our educational technology solutions create impactful learning experiences for students and educators.</p>
+            <button class="btn" onclick="toggleView('demo4', this)">VIEW MORE</button>
+            <div id="demo4"></div>
+        </div>
+    </div>
+
+    <!-- Industry 5 -->
+    <div class="c">
+        <img src="manufacturing.png" alt="Manufacturing Industry Image">
+        <div class="l">
+            <img src="i5.png" alt="Manufacturing Icon">
+            <h1>MANUFACTURING</h1>
+            <p>We offer manufacturing software solutions to optimize processes, reduce costs, and enhance productivity.</p>
+            <button class="btn" onclick="toggleView('demo5', this)">VIEW MORE</button>
+            <div id="demo5"></div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq">
+        <h1>Frequently Asked Questions</h1>
+        <button class="btn" onclick="faq1()">I need to develop an application – where do I start?</button>
+        <p id="faqDemo1"></p>
+    </div>
+</div>
+
+<script>
+    // Toggle View Function
+    function toggleView(demoId, button) {
+        const demoDiv = document.getElementById(demoId);
+
+        if (demoDiv.innerHTML === "") {
+            let additionalContent;
+            switch (demoId) {
+                case 'demo1':
+                    additionalContent = `
+                        <p>Empowering your business with innovative E-commerce and retail solutions.</p>
+                        <ul>
+                            <li>Ecommerce App Development</li>
+                            <li>Web Application and Portal</li>
+                            <li>B2B & B2C Solutions</li>
+                        </ul>
+                    `;
+                    break;
+                case 'demo2':
+                    additionalContent = `
+                        <p>Healthcare solutions that improve patient care and streamline operations.</p>
+                        <ul>
+                            <li>Telemedicine Platforms</li>
+                            <li>Patient Management Systems</li>
+                            <li>Data Analytics</li>
+                        </ul>
+                    `;
+                    break;
+                case 'demo3':
+                    additionalContent = `
+                        <p>Secure financial solutions that meet industry regulations and client needs.</p>
+                        <ul>
+                            <li>Banking Software</li>
+                            <li>Fintech Solutions</li>
+                            <li>Risk Management</li>
+                        </ul>
+                    `;
+                    break;
+                case 'demo4':
+                    additionalContent = `
+                        <p>Education technology to create impactful learning experiences.</p>
+                        <ul>
+                            <li>Learning Management Systems</li>
+                            <li>Student Information Systems</li>
+                            <li>e-Learning Platforms</li>
+                        </ul>
+                    `;
+                    break;
+                case 'demo5':
+                    additionalContent = `
+                        <p>Streamlining manufacturing with digital solutions for efficiency.</p>
+                        <ul>
+                            <li>Production Management</li>
+                            <li>Supply Chain Optimization</li>
+                            <li>Inventory Control</li>
+                        </ul>
+                    `;
+                    break;
+            }
+            demoDiv.innerHTML = additionalContent;
+            button.innerText = "VIEW LESS";
+        } else {
+            demoDiv.innerHTML = "";
+            button.innerText = "VIEW MORE";
+        }
+    }
+
+    // FAQ Content Functions
+    function faq1() {
+        document.getElementById("faqDemo1").innerHTML = `
+            <p>There are multiple ways to start application development. First, answer three questions:</p>
+            <ul>
+                <li>What business goals are you trying to achieve?</li>
+                <li>What measurable result do you want?</li>
+                <li>Do you have resources to develop an application?</li>
+            </ul>
+            <p>Contact professionals capable of developing an application for guidance.</p>
+        `;
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Profiles</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profiles-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of items to create multiple rows */
+    gap: 20px; /* Adds space between profiles */
+    justify-content: center; /* Centers the profiles */
+    padding: 20px;
+}
+
+ .profile-container1, .profile-container2, .profile-container3,.profile-container4 {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    /* Sets each profile container to take about half the row */
+    width: 570px; /* Optional: Limit max width */
+    height: 250px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+
+/* Unique animation classes */
+
+
+.profile-container1.animate-right {
+    animation: fadeInRight 1s forwards;
+}
+
+.profile-container2.animate-up {
+    animation: fadeInUp 1s forwards;
+}
+
+.profile-container3.animate-down {
+    animation: fadeInDown 1s forwards;
+}
+.profile-container4.animate-left {
+    animation: fadeInLeft 1s forwards;
+}
+.profile-image img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 3px solid #395FA5;
+    object-fit: cover;
+}
+
+.profile-info {
+    margin-left: 30px;
+}
+
+.profile-info h2 {
+    font-size: 26px;
+    color: crimson;
+}
+
+    </style>
+</head>
+<body>
+
+<h1>Meet the Team Behind the Magic</h1>
+<div class="profiles-wrapper">
+   
+
+    <div class="profile-container1">
+        <div class="profile-image">
+            <img src="f.png" alt="Profile Image">
+        </div>
+        <div class="profile-info">
+            <h2>Jane Smith</h2>
+            <p><strong>Email:</strong> jane.smith@example.com</p>
+            <p><strong>Role:</strong> CTO</p>
+            <p><strong>Location:</strong> Los Angeles, USA</p>
+            <p><strong>Bio:</strong> An innovative leader with a passion for technology.</p>
+        </div>
+    </div>
+
+    <div class="profile-container2">
+        <div class="profile-image">
+            <img src="f.png" alt="Profile Image">
+        </div>
+        <div class="profile-info">
+            <h2>Mike Johnson</h2>
+            <p><strong>Email:</strong> mike.johnson@example.com</p>
+            <p><strong>Role:</strong> CFO</p>
+            <p><strong>Location:</strong> Chicago, USA</p>
+            <p><strong>Bio:</strong> Financial expert with a focus on tech industry.</p>
+        </div>
+    </div>
+
+    <div class="profile-container3">
+        <div class="profile-image">
+            <img src="f.png" alt="Profile Image">
+        </div>
+        <div class="profile-info">
+            <h2>Emma Brown</h2>
+            <p><strong>Email:</strong> emma.brown@example.com</p>
+            <p><strong>Role:</strong> COO</p>
+            <p><strong>Location:</strong> Miami, USA</p>
+            <p><strong>Bio:</strong> Operations leader with a drive for excellence.</p>
+        </div>
+    </div>
+    <div class="profile-container4">
+        <div class="profile-image">
+            <img src="f.png" alt="Profile Image">
+        </div>
+        <div class="profile-info">
+            <h2>Mike Johnson</h2>
+            <p><strong>Email:</strong> mike.johnson@example.com</p>
+            <p><strong>Role:</strong> CFO</p>
+            <p><strong>Location:</strong> Chicago, USA</p>
+            <p><strong>Bio:</strong> Financial expert with a focus on tech industry.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function animateOnScroll() {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add(entry.target.dataset.animate); // Adds the animation class from the data attribute
+            }
+        });
+    });
+
+    // Set data-animate attribute for each container
+    
+    document.querySelector('.profile-container1').setAttribute('data-animate', 'animate-right');
+    document.querySelector('.profile-container2').setAttribute('data-animate', 'animate-up');
+    document.querySelector('.profile-container3').setAttribute('data-animate', 'animate-down');
+    document.querySelector('.profile-container4').setAttribute('data-animate', 'animate-left');
+
+    // Observe each container
+    const profileContainers = document.querySelectorAll(' .profile-container1, .profile-container2, .profile-container3, .profile-container4');
+    profileContainers.forEach(container => observer.observe(container));
+}
+
+// Run the function when the page loads
+document.addEventListener("DOMContentLoaded", animateOnScroll);
+
+</script>
+</body>
+</html>
